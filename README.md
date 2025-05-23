@@ -1616,3 +1616,196 @@ Consider a dataset with student test scores. We can summarize it with:
 * Calculate central tendencies to determine class performance.
 
 ---
+Rendben, elkészítem a 9. tétel (Függvénytani alapismeretek, függvények tulajdonságai, határérték, folytonosság. Számsorozatok. A számtani sorozat, az első n tag összege) **szó szerinti, precíz angol fordítását** matematikatanári, anyanyelvi minőségben. Minden képletet, ábrát, szerkezeti felosztást, alcímet megőrzök és a matematikai nyelvezetet angol érettségi szintre emelem. A képletek, szakszavak pontos angol megfelelőit használom.
+
+---
+
+## 9. Topic: Basic Concepts of Functions, Properties of Functions, Limits, Continuity. Sequences. Arithmetic Sequence, Sum of the First n Terms
+
+### Functions
+
+**Definition:**
+A function is a mapping that assigns to each element of a set exactly one element of another set (possibly the same set). The first set is called the *domain* of the function, the second is the *codomain*, and the set of all output values is the *range* (or image) of the function.
+We denote a function as $f: A \to B$, meaning $f$ maps from set $A$ to set $B$.
+
+**Examples of function notations:**
+
+* $f(x) = x^2$
+* $f: x \mapsto x^2$
+* $y = f(x) = x^2$, where $x \in \mathbb{R}$, $y \in \mathbb{R}^+$ (or $[0, +\infty)$)
+
+**Properties of functions:**
+The most important properties we analyze are:
+
+* Domain, codomain, range
+* Injectivity (one-to-one)
+* Surjectivity (onto)
+* Bijectivity (both one-to-one and onto)
+* Even and odd functions
+* Periodicity
+* Monotonicity (increasing or decreasing)
+* Boundedness (above, below)
+* Extrema (maximum, minimum)
+* Inverse function
+
+#### Definitions and Properties
+
+* **Domain:** The set of all possible inputs ($x$) for which the function is defined.
+
+* **Range (image):** The set of all possible output values ($y$) that the function can attain.
+
+* **Injective (one-to-one):** The function is injective if different elements of the domain are mapped to different elements of the codomain:
+  $\forall x_1, x_2 \in A, x_1 \ne x_2 \implies f(x_1) \ne f(x_2)$
+
+* **Surjective (onto):** The function is surjective if for every element of the codomain there is a preimage in the domain:
+  $\forall y \in B, \exists x \in A: f(x) = y$
+
+* **Bijective:** A function is bijective if it is both injective and surjective.
+
+* **Even function:**
+  $f(-x) = f(x)$ for all $x$ in the domain (e.g., $x^2$)
+
+* **Odd function:**
+  $f(-x) = -f(x)$ for all $x$ in the domain (e.g., $x^3$, $\sin x$)
+
+* **Periodic function:**
+  There exists a positive real number $T$ such that $f(x + T) = f(x)$ for all $x$ in the domain (e.g., $\sin x$, period $2\pi$)
+
+* **Monotonicity:**
+
+  * Increasing: $f(x_1) < f(x_2)$ if $x_1 < x_2$
+  * Decreasing: $f(x_1) > f(x_2)$ if $x_1 < x_2$
+
+* **Bounded above/below:**
+
+  * There exists an $M$ such that $f(x) \leq M$ for all $x$ in the domain (bounded above)
+  * There exists an $m$ such that $f(x) \geq m$ for all $x$ in the domain (bounded below)
+
+* **Maximum, minimum (extremum):**
+  The greatest or least value attained by the function on its domain.
+
+* **Inverse function:**
+  If $f$ is bijective, then its inverse $f^{-1}$ exists, such that $f^{-1}(f(x)) = x$ and $f(f^{-1}(y)) = y$.
+
+---
+
+### Limits and Continuity
+
+#### Limit of a function at a point
+
+**Definition:**
+Let $f$ be defined in a neighborhood of $a$ (except possibly at $a$). We say that the limit of $f(x)$ as $x \to a$ is $A$,
+
+$$
+\lim_{x \to a} f(x) = A
+$$
+
+if for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $x$ with $0 < |x - a| < \delta$, it follows that $|f(x) - A| < \varepsilon$.
+
+**Left and right limits:**
+
+* The **left-hand limit** as $x \to a^-$: $\lim_{x \to a^-} f(x)$
+* The **right-hand limit** as $x \to a^+$: $\lim_{x \to a^+} f(x)$
+* The limit exists if and only if the left and right limits are equal.
+
+#### Continuity
+
+**Definition:**
+A function $f$ is *continuous* at point $a$ if
+
+$$
+\lim_{x \to a} f(x) = f(a)
+$$
+
+i.e., the function’s value at $a$ is equal to the limit as $x$ approaches $a$.
+
+**Types of discontinuity:**
+
+* Removable discontinuity (hole)
+* Jump discontinuity (step)
+* Infinite discontinuity (asymptote)
+
+**Theorems related to continuity:**
+
+* If $f$ and $g$ are continuous at $a$, then $f+g$, $f-g$, $fg$, and (if $g(a)\ne 0$) $\frac{f}{g}$ are also continuous at $a$.
+
+---
+
+### Sequences
+
+**Definition:**
+A sequence is a function whose domain is the set of natural numbers ($\mathbb{N}$) or a subset thereof. We write the sequence as $(a_n)$ or $\{a_n\}$.
+
+**Types of sequences:**
+
+* Finite/infinite
+* Monotonic (increasing, decreasing)
+* Bounded
+* Constant
+
+#### Limit of a sequence
+
+A sequence $(a_n)$ converges to $A$ if for every $\varepsilon > 0$ there exists $N$ such that for all $n > N$, $|a_n - A| < \varepsilon$.
+If such an $A$ exists, the sequence is **convergent**, otherwise **divergent**.
+
+---
+
+### Arithmetic Sequence
+
+**Definition:**
+A sequence is called an arithmetic sequence if the difference between any two consecutive terms is constant. That is,
+
+$$
+a_{n+1} = a_n + d
+$$
+
+where $d$ is the common difference.
+
+**General formula for the nth term:**
+
+$$
+a_n = a_1 + (n-1)d
+$$
+
+**Sum of the first n terms:**
+
+$$
+S_n = a_1 + a_2 + \dots + a_n
+$$
+
+This can be calculated by the formula:
+
+$$
+S_n = \frac{n(a_1 + a_n)}{2}
+$$
+
+or
+
+$$
+S_n = \frac{n\left[2a_1 + (n-1)d\right]}{2}
+$$
+
+**Proof of the sum formula:**
+Let us write the sum forwards and backwards:
+
+$$
+S_n = a_1 + a_2 + \ldots + a_n \\
+S_n = a_n + a_{n-1} + \ldots + a_1
+$$
+
+Adding both, each pair sums to $a_1 + a_n$, and there are $n$ pairs:
+
+$$
+2S_n = n(a_1 + a_n) \implies S_n = \frac{n(a_1 + a_n)}{2}
+$$
+
+---
+
+### Applications
+
+* The concept of function is fundamental in all branches of mathematics, as well as in natural and social sciences.
+* Limits and continuity are crucial for calculus, physics, and engineering (e.g., studying motion, rates of change).
+* Sequences and series appear in statistics, economics (e.g., payments, annuities), and many fields involving progression or accumulation.
+* The arithmetic sequence is frequently used in financial calculations, such as installment payments, and in various real-life problems involving uniform change.
+
+---
