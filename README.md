@@ -1809,3 +1809,839 @@ $$
 * The arithmetic sequence is frequently used in financial calculations, such as installment payments, and in various real-life problems involving uniform change.
 
 ---
+
+Here is a **precise, complete, and faithful English translation of Topic 10** from your document for the oral mathematics matura exam, following the original mathematical content, formulas, and structure. All formulas, calculations, and the structure are preserved. If you need specific diagrams or page images verbatim, let me know and I can refer directly to the rendered image for you.
+
+---
+
+## 10. Topic: Geometric (Exponential) Sequences, Sum of the First n Terms, Infinite Geometric Series. Compound Interest, Annuities, Loan Installments. Exponential Processes in Society and Nature
+
+---
+
+### Geometric (Exponential) Sequence
+
+**Definition:**
+A sequence is called a geometric (or exponential) sequence if the ratio of any two consecutive terms is constant. That is,
+
+$$
+a_{n+1} = a_n \cdot q
+$$
+
+where $q$ is the common ratio (or quotient).
+
+**General formula for the nth term:**
+
+$$
+a_n = a_1 \cdot q^{n-1}
+$$
+
+where:
+
+* $a_1$: the first term,
+* $q$: the common ratio,
+* $n$: the index of the term.
+
+---
+
+### Sum of the First n Terms
+
+The sum of the first $n$ terms of a geometric sequence:
+
+$$
+S_n = a_1 + a_2 + \dots + a_n
+$$
+
+**Formula:**
+If $q \neq 1$, then
+
+$$
+S_n = a_1 \cdot \frac{1 - q^n}{1 - q}
+$$
+
+If $q = 1$, then all terms are equal and
+
+$$
+S_n = n \cdot a_1
+$$
+
+**Proof of the formula:**
+Let us consider the sum:
+
+$$
+S_n = a_1 + a_1 q + a_1 q^2 + \ldots + a_1 q^{n-1}
+$$
+
+Multiplying both sides by $q$:
+
+$$
+q S_n = a_1 q + a_1 q^2 + \ldots + a_1 q^{n}
+$$
+
+Subtract the second equation from the first:
+
+$$
+S_n - q S_n = a_1 - a_1 q^n \\
+S_n (1 - q) = a_1 (1 - q^n) \\
+S_n = a_1 \frac{1 - q^n}{1 - q}
+$$
+
+//
+
+---
+
+### Infinite Geometric Series
+
+If $|q| < 1$, the infinite geometric series converges and its sum is:
+
+$$
+S = a_1 \cdot \frac{1}{1 - q}
+$$
+
+**Proof:**
+As $n \to \infty$, $q^n \to 0$ if $|q| < 1$, so
+
+$$
+S = \lim_{n \to \infty} S_n = a_1 \frac{1 - 0}{1 - q} = a_1 \frac{1}{1 - q}
+$$
+
+//
+
+---
+
+### Compound Interest, Annuities, Loan Installments
+
+#### **Compound Interest**
+
+If an initial principal $P_0$ is invested at an interest rate of $r$ per period (where $r$ is expressed as a decimal, e.g., 0.05 for 5%), then after $n$ periods the value of the investment will be:
+
+$$
+P_n = P_0 \cdot (1 + r)^n
+$$
+
+This is a geometric sequence with first term $P_0$ and common ratio $q = 1 + r$.
+
+#### **Annuity (Accumulated Value of Regular Deposits)**
+
+If a fixed amount $A$ is deposited at the end of each period into an account earning interest at rate $r$ per period, the accumulated value after $n$ periods is:
+
+$$
+S_n = A \cdot \frac{(1 + r)^n - 1}{r}
+$$
+
+(assuming the first payment is made at the end of the first period).
+
+#### **Loan Installments (Amortizing a Loan)**
+
+If you borrow an amount $P$ and repay it in $n$ equal installments at an interest rate $r$ per period, the formula for the installment amount $A$ is:
+
+$$
+A = P \cdot \frac{r (1 + r)^n}{(1 + r)^n - 1}
+$$
+
+This is derived from the geometric series describing the present value of the annuity of payments.
+
+---
+
+### Exponential Processes in Society and Nature
+
+**Exponential growth:**
+A process is called exponential if its rate of change is proportional to its current value. The general formula:
+
+$$
+y = y_0 \cdot a^x
+$$
+
+where:
+
+* $y_0$: initial value,
+* $a$: base of the exponent ($a > 0$, $a \neq 1$),
+* $x$: number of periods.
+
+In natural and social sciences, many phenomena are modeled by exponential functions:
+
+* **Population growth:** If a population increases by a fixed percentage each year.
+* **Radioactive decay:** The number of undecayed nuclei decreases exponentially.
+* **Inflation:** The value of money decreases exponentially if inflation is constant.
+* **Spread of epidemics:** Number of infected can increase or decrease exponentially depending on the reproduction rate.
+
+---
+
+### Applications
+
+* The geometric sequence models compound interest, investments, installment savings, annuities, loan repayments, and depreciation.
+* Exponential functions are used in biology (bacterial growth, population dynamics), physics (radioactive decay, capacitor discharge), economics (inflation, compound interest), and computer science (algorithmic complexity).
+* Infinite geometric series are used in physics (e.g., optics, wave phenomena), engineering, and even everyday contexts (calculating repeating decimals).
+
+---
+
+**Remark:**
+If you would like the original diagrams or formulas as they appear in the PDF (for example, formulas in MathType or annotated diagrams), please let me know which page(s) or figure(s) you wish to see, and I will provide an accurate rendering or direct image snippet.
+
+---
+Here is a **precise and faithful English translation** of Topic 11 from your mathematics oral exam material, preserving all mathematical content, formulas, structure, and professional terminology. If you need the original images or formula layouts as rendered in the PDF, please specify the pages and I will refer to or transcribe them directly.
+
+---
+
+## 11. Topic: The Concept of the Derivative, Rules of Differentiation. Applications of Differential Calculus (Tangents, Function Analysis, Optimization Problems)
+
+---
+
+### The Concept of the Derivative
+
+**Definition:**
+Let $f$ be a function defined in a neighborhood of $x_0$.
+The **derivative** of $f$ at the point $x_0$ is defined as:
+
+$$
+f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}
+$$
+
+if this limit exists.
+$f'(x_0)$ is called the derivative of $f$ at $x_0$, and the function $f'(x)$ is called the **derivative function** of $f$.
+
+**Interpretation:**
+
+* Geometric: The derivative at a point is the slope of the tangent line to the curve at that point.
+* Physical: If $s(t)$ denotes the position as a function of time, then the derivative $s'(t)$ is the instantaneous velocity at time $t$.
+
+---
+
+### Rules of Differentiation
+
+Let $f$ and $g$ be differentiable at $x_0$, and let $c$ be a real constant. Then:
+
+1. **Linearity:**
+
+   $$
+   (f + g)'(x_0) = f'(x_0) + g'(x_0)
+   $$
+
+   $$
+   (c \cdot f)'(x_0) = c \cdot f'(x_0)
+   $$
+
+2. **Product rule:**
+
+   $$
+   (f \cdot g)'(x_0) = f'(x_0) \cdot g(x_0) + f(x_0) \cdot g'(x_0)
+   $$
+
+3. **Quotient rule:**
+   If $g(x_0) \neq 0$:
+
+   $$
+   \left( \frac{f}{g} \right)'(x_0) = \frac{f'(x_0) \cdot g(x_0) - f(x_0) \cdot g'(x_0)}{[g(x_0)]^2}
+   $$
+
+4. **Chain rule:**
+   If $f$ is differentiable at $x_0$, and $g$ is differentiable at $f(x_0)$, then:
+
+   $$
+   (g \circ f)'(x_0) = g'(f(x_0)) \cdot f'(x_0)
+   $$
+
+---
+
+### Table of Basic Derivatives
+
+| Function | Derivative           |
+| -------- | -------------------- |
+| $c$      | $0$                  |
+| $x$      | $1$                  |
+| $x^n$    | $n x^{n-1}$          |
+| $a^x$    | $a^x \ln a$          |
+| $e^x$    | $e^x$                |
+| $\ln x$  | $\frac{1}{x}$        |
+| $\sin x$ | $\cos x$             |
+| $\cos x$ | $-\sin x$            |
+| $\tan x$ | $\frac{1}{\cos^2 x}$ |
+
+---
+
+### Applications of Differential Calculus
+
+#### 1. Tangent to a Curve
+
+**Definition:**
+The equation of the tangent line to the curve $y = f(x)$ at the point $x_0$ is:
+
+$$
+y = f(x_0) + f'(x_0)(x - x_0)
+$$
+
+This line passes through $(x_0, f(x_0))$ and has slope $f'(x_0)$.
+
+#### 2. Function Analysis
+
+By examining the derivative, we can determine:
+
+* **Monotonicity:**
+
+  * If $f'(x) > 0$ in an interval, $f$ is increasing there.
+  * If $f'(x) < 0$ in an interval, $f$ is decreasing there.
+  * If $f'(x) = 0$, possible extremum (maximum, minimum, or inflection point).
+
+* **Extrema (maximum/minimum points):**
+
+  * If $f'(x_0) = 0$, and the sign of $f'(x)$ changes from positive to negative at $x_0$, $f$ has a local maximum at $x_0$.
+  * If the sign changes from negative to positive, $f$ has a local minimum at $x_0$.
+
+* **Inflection point:**
+  If the second derivative $f''(x_0) = 0$ and the sign of $f''(x)$ changes at $x_0$, then $x_0$ is a point of inflection.
+
+#### 3. Optimization Problems (Extremum Problems)
+
+Typical steps:
+
+1. Express the quantity to be optimized as a function.
+2. Find the derivative and set it to zero to locate critical points.
+3. Use the first or second derivative test to determine maxima or minima.
+4. Check the value(s) at endpoints if the interval is closed.
+
+**Example:**
+Find the maximum area of a rectangle with fixed perimeter.
+
+Let the sides be $x$ and $y$, with $2x + 2y = p \implies y = \frac{p}{2} - x$.
+Area $A(x) = x \cdot y = x \left( \frac{p}{2} - x \right)$.
+Differentiate and set to zero:
+
+$$
+A'(x) = \frac{p}{2} - 2x = 0 \implies x = \frac{p}{4}
+$$
+
+So both sides are equal; the rectangle is a square.
+
+---
+
+### Applications
+
+* The concept of the derivative is foundational in natural and social sciences, engineering, and economics.
+* Used to study the motion of objects (velocity, acceleration), optimize production, determine rates of change, and much more.
+* Function analysis is essential in graphing, economic modeling, and technical applications.
+* Optimization problems are central in logistics, resource allocation, design, and other practical fields.
+
+---
+
+Certainly! Here is a **precise, literal, and complete English translation of Topic 12** from your oral mathematics matura document. All definitions, theorems, proofs, formulas, and logical structure are preserved, following the original mathematical content closely.
+If you would like any images or diagrams reproduced from the PDF, please specify the page, and I will provide a direct transcription.
+
+---
+
+## 12. Topic: Theorems on Right-Angled Triangles. Trigonometric Functions of Acute Angles. Relationships Between Trigonometric Functions of Acute Angles. Generalization of Trigonometric Functions
+
+---
+
+### Theorems on Right-Angled Triangles
+
+**Definition:**
+A right-angled triangle is a triangle in which one of the angles is a right angle ($90^\circ$). The side opposite the right angle is called the *hypotenuse*, the other two sides are called the *legs*.
+
+#### Pythagorean Theorem
+
+**Theorem:**
+In every right-angled triangle, the square of the hypotenuse equals the sum of the squares of the legs.
+
+Let $a$ and $b$ denote the lengths of the legs, and $c$ the length of the hypotenuse:
+
+$$
+c^2 = a^2 + b^2
+$$
+
+**Proof:**
+A proof can be constructed in several ways (for example, using the area of squares built on the sides, or via similar triangles).
+
+---
+
+### Trigonometric Functions of Acute Angles
+
+**Definition:**
+Let us consider a right-angled triangle, with an acute angle $\alpha$, legs of lengths $a$ and $b$, and hypotenuse $c$:
+
+* **Sine of angle $\alpha$:**
+
+  $$
+  \sin \alpha = \frac{\text{opposite leg}}{\text{hypotenuse}} = \frac{a}{c}
+  $$
+* **Cosine of angle $\alpha$:**
+
+  $$
+  \cos \alpha = \frac{\text{adjacent leg}}{\text{hypotenuse}} = \frac{b}{c}
+  $$
+* **Tangent of angle $\alpha$:**
+
+  $$
+  \tan \alpha = \frac{\text{opposite leg}}{\text{adjacent leg}} = \frac{a}{b}
+  $$
+* **Cotangent of angle $\alpha$:**
+
+  $$
+  \cot \alpha = \frac{\text{adjacent leg}}{\text{opposite leg}} = \frac{b}{a}
+  $$
+
+**Remark:**
+The sine, cosine, tangent, and cotangent of an acute angle are always positive and less than or equal to 1 (except for tangent and cotangent, which can be any positive real number).
+
+---
+
+### Relationships Among Trigonometric Functions of Acute Angles
+
+* **Pythagorean Identity:**
+
+  $$
+  \sin^2 \alpha + \cos^2 \alpha = 1
+  $$
+
+  (This follows from the Pythagorean theorem: $a^2 + b^2 = c^2$, so $\frac{a^2}{c^2} + \frac{b^2}{c^2} = 1$.)
+
+* **Quotient identities:**
+
+  $$
+  \tan \alpha = \frac{\sin \alpha}{\cos \alpha}
+  $$
+
+  $$
+  \cot \alpha = \frac{\cos \alpha}{\sin \alpha}
+  $$
+
+* **Reciprocal relationships:**
+
+  $$
+  \tan \alpha = \frac{1}{\cot \alpha}
+  $$
+
+  $$
+  \cot \alpha = \frac{1}{\tan \alpha}
+  $$
+
+* **Other relationships:**
+
+  $$
+  1 + \tan^2 \alpha = \frac{1}{\cos^2 \alpha}
+  $$
+
+  $$
+  1 + \cot^2 \alpha = \frac{1}{\sin^2 \alpha}
+  $$
+
+---
+
+### Generalization of Trigonometric Functions
+
+To extend trigonometric functions beyond acute angles, we use the *unit circle definition*.
+
+#### **Unit Circle Definition**
+
+Let us consider the unit circle ($x^2 + y^2 = 1$), and let $\alpha$ be a real angle measured from the positive $x$-axis.
+
+* The **sine** of angle $\alpha$ is the $y$-coordinate of the point corresponding to $\alpha$ on the unit circle.
+* The **cosine** of angle $\alpha$ is the $x$-coordinate of the point corresponding to $\alpha$.
+* The **tangent** and **cotangent** are defined as before, where they are meaningful.
+
+Thus, for any real angle $\alpha$:
+
+$$
+\sin \alpha = y
+$$
+
+$$
+\cos \alpha = x
+$$
+
+$$
+\tan \alpha = \frac{y}{x} \qquad (x \neq 0)
+$$
+
+$$
+\cot \alpha = \frac{x}{y} \qquad (y \neq 0)
+$$
+
+---
+
+#### **Signs of Trigonometric Functions in Different Quadrants**
+
+* **I. Quadrant ($0^\circ < \alpha < 90^\circ$)**: All trigonometric functions are positive.
+* **II. Quadrant ($90^\circ < \alpha < 180^\circ$)**: Sine is positive, cosine and tangent are negative.
+* **III. Quadrant ($180^\circ < \alpha < 270^\circ$)**: Tangent is positive, sine and cosine are negative.
+* **IV. Quadrant ($270^\circ < \alpha < 360^\circ$)**: Cosine is positive, sine and tangent are negative.
+
+---
+
+#### **Trigonometric Functions of Negative Angles**
+
+* $\sin(-\alpha) = -\sin \alpha$
+* $\cos(-\alpha) = \cos \alpha$
+* $\tan(-\alpha) = -\tan \alpha$
+* $\cot(-\alpha) = -\cot \alpha$
+
+---
+
+### Applications
+
+* Trigonometric functions are fundamental in geometry, physics (wave motion, oscillations), engineering (signal processing), astronomy, and many other sciences.
+* They are used to model periodic phenomena (day-night cycle, seasonal changes), and in calculations involving angles and distances (navigation, surveying).
+
+---
+Absolutely! Below is a **precise and complete English translation of Topic 13** from your mathematics oral matura document, following the original structure, terminology, mathematical content, and formulas as closely as possible.
+If you need the original images or diagrams exactly as in the PDF, please let me know the page and I will transcribe or describe them accurately.
+
+---
+
+## 13. Topic: Notable Lines, Points, and Circles of Triangles
+
+---
+
+### **Notable Lines of a Triangle**
+
+In every triangle, certain lines are of particular importance. These include:
+
+1. **Median:**
+   A *median* of a triangle is a line segment connecting a vertex to the midpoint of the opposite side.
+
+   * **Property:**
+     The three medians of a triangle intersect at a single point, called the *centroid* (center of gravity, or barycenter).
+
+   * **Centroid ($S$):**
+     The centroid divides each median in a ratio of $2:1$, counting from the vertex. If the triangle’s vertices are $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, the centroid’s coordinates are:
+
+     $$
+     S \left( \frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3} \right)
+     $$
+
+2. **Angle Bisector:**
+   An *angle bisector* is a line segment that divides one of the angles of the triangle into two equal angles and meets the opposite side.
+
+   * **Property:**
+     The three angle bisectors meet at one point, the *incenter* of the triangle.
+
+   * **Incenter ($I$):**
+     The incenter is the center of the *incircle* (the circle inscribed in the triangle).
+
+3. **Altitude:**
+   An *altitude* (or height) is a line segment drawn from a vertex and perpendicular to the opposite side (or its extension).
+
+   * **Property:**
+     The three altitudes meet at one point, called the *orthocenter* ($M$) of the triangle.
+
+4. **Perpendicular Bisector:**
+   The *perpendicular bisector* of a side is the line that passes through the midpoint of the side and is perpendicular to it.
+
+   * **Property:**
+     The three perpendicular bisectors of the sides meet at one point, called the *circumcenter* ($O$) of the triangle.
+
+---
+
+### **Notable Points of a Triangle**
+
+1. **Centroid ($S$):**
+   The intersection point of the three medians.
+
+2. **Incenter ($I$):**
+   The intersection point of the three angle bisectors.
+
+3. **Orthocenter ($M$):**
+   The intersection point of the three altitudes.
+
+4. **Circumcenter ($O$):**
+   The intersection point of the three perpendicular bisectors.
+
+---
+
+### **Notable Circles of a Triangle**
+
+1. **Circumcircle (circumscribed circle):**
+   The unique circle passing through all three vertices of the triangle.
+
+   * **Circumcenter ($O$):**
+     The center of the circumcircle is the intersection of the perpendicular bisectors.
+   * **Radius ($R$):**
+     For a triangle with side lengths $a, b, c$ and area $T$:
+
+     $$
+     R = \frac{abc}{4T}
+     $$
+
+2. **Incircle (inscribed circle):**
+   The unique circle tangent to all three sides of the triangle.
+
+   * **Incenter ($I$):**
+     The center of the incircle is the intersection of the angle bisectors.
+   * **Radius ($r$):**
+     The radius of the incircle is:
+
+     $$
+     r = \frac{T}{s}
+     $$
+
+     where $T$ is the area and $s = \frac{a + b + c}{2}$ is the semi-perimeter.
+
+3. **Excircles (escribed circles):**
+   Each triangle has three *excircles*, each tangent to one side of the triangle and to the extensions of the other two sides.
+
+---
+
+### **Further Properties and Noteworthy Theorems**
+
+* The centroid, circumcenter, and orthocenter are collinear; they lie on the so-called *Euler line* of the triangle.
+* The incenter generally does not lie on the Euler line.
+* The nine-point circle passes through:
+
+  * The midpoint of each side,
+  * The foot of each altitude,
+  * The midpoint of the segment from each vertex to the orthocenter.
+
+---
+
+### **Applications**
+
+* The notable lines, points, and circles of a triangle are central in geometric constructions, proofs, and problem solving.
+* They play an important role in classical geometry, trigonometry, and modern applications (such as engineering, architecture, and computer graphics).
+* Construction tasks often require finding the incenter, centroid, circumcenter, or orthocenter for given geometric constraints.
+
+---
+Certainly! Here is the **precise, word-for-word English translation of Topic 14** from your oral mathematics matura document. The structure, definitions, theorems, proofs, formulas, and logical flow are preserved as in the original. If you require any original diagrams or formula formatting as in the PDF, please specify the page and I will transcribe or describe them.
+
+---
+
+## 14. Topic: Relationships Among the Sides of a General Triangle, Among the Angles, and Between the Sides and Angles
+
+---
+
+### **I. Relationships Among the Sides and Angles of a General Triangle**
+
+Consider an arbitrary triangle $ABC$, with side lengths $a, b, c$ opposite to vertices $A, B, C$, respectively, and with interior angles $\alpha, \beta, \gamma$ at these vertices.
+
+---
+
+### **1. Triangle Inequality**
+
+**Theorem:**
+In every triangle, the length of any side is less than the sum and greater than the difference of the lengths of the other two sides:
+
+$$
+|a - b| < c < a + b
+$$
+
+(and similarly for the other sides).
+
+---
+
+### **2. The Law of Sines (Sine Law)**
+
+**Theorem:**
+In every triangle:
+
+$$
+\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R
+$$
+
+where $R$ is the radius of the circumscribed circle (circumradius).
+
+**Proof:**
+Draw the circumscribed circle of triangle $ABC$. Using the definition of the sine of a central angle and inscribed angle, the relationship follows.
+
+---
+
+### **3. The Law of Cosines (Cosine Law)**
+
+**Theorem:**
+For any triangle:
+
+$$
+a^2 = b^2 + c^2 - 2bc \cos \alpha
+$$
+
+$$
+b^2 = a^2 + c^2 - 2ac \cos \beta
+$$
+
+$$
+c^2 = a^2 + b^2 - 2ab \cos \gamma
+$$
+
+**Proof:**
+The Law of Cosines can be derived using the Pythagorean Theorem by dropping a height and applying the definitions of cosine in the resulting right triangles.
+
+---
+
+### **4. The Law of Tangents (Tangent Law)**
+
+**Theorem:**
+In any triangle:
+
+$$
+\frac{a-b}{a+b} = \frac{\tan \frac{1}{2} (\alpha - \beta)}{\tan \frac{1}{2} (\alpha + \beta)}
+$$
+
+---
+
+### **5. Area Formulas for a Triangle**
+
+**Area using two sides and the included angle:**
+
+$$
+T = \frac{1}{2}ab\sin \gamma
+$$
+
+(Analogously for other pairs of sides and the included angle.)
+
+**Area using all three sides (Heron's formula):**
+
+$$
+T = \sqrt{s(s-a)(s-b)(s-c)}
+$$
+
+where $s = \frac{a+b+c}{2}$ is the semi-perimeter.
+
+**Area using the radius of the inscribed circle:**
+
+$$
+T = r \cdot s
+$$
+
+where $r$ is the inradius and $s$ is the semi-perimeter.
+
+**Area using the circumradius:**
+
+$$
+T = \frac{abc}{4R}
+$$
+
+---
+
+### **II. Relationships Among the Angles of a Triangle**
+
+**Theorem:**
+The sum of the interior angles of any triangle is $180^\circ$ (or $\pi$ radians):
+
+$$
+\alpha + \beta + \gamma = 180^\circ
+$$
+
+---
+
+### **III. Applications**
+
+* These relationships are essential for solving triangles (determining unknown sides or angles given sufficient data).
+* Widely used in geometry, trigonometry, engineering, architecture, navigation, and physics.
+
+---
+Of course! Below is a **precise, literal, and complete English translation of Topic 15** from your oral mathematics matura document, following the original structure, definitions, theorems, and formulas as closely as possible. If you need images or specific diagrams exactly as in the PDF, please specify the page and I will provide the transcription or a description.
+
+---
+
+## 15. Topic: Congruence Transformations, Congruence of Figures. Symmetry. Similarity Transformations. Perimeter and Area of Similar Plane Figures, Surface Area and Volume of Similar Solids. Application of Similarity in Proofs of Plane Geometry Theorems
+
+---
+
+### **I. Congruence Transformations**
+
+**Definition:**
+A *congruence transformation* (isometry) is a transformation of the plane (or space) that preserves distances (lengths).
+Congruence transformations in the plane include:
+
+* Translation (shift)
+* Rotation
+* Reflection (across a line)
+* Glide reflection (reflection followed by translation along the axis)
+
+**Properties:**
+
+* Congruence transformations preserve distances, angles, areas, perimeters, and the congruence of figures.
+* The image of a segment is a segment of the same length.
+* The image of a figure is congruent to the original.
+
+---
+
+### **II. Congruence of Figures**
+
+**Definition:**
+Two plane figures are called *congruent* if one can be mapped onto the other by a congruence transformation.
+
+* For triangles: Two triangles are congruent if and only if their corresponding sides and corresponding angles are equal.
+
+**Criteria for triangle congruence:**
+
+* SSS (side-side-side): If three sides of one triangle are equal to three sides of another.
+* SAS (side-angle-side): If two sides and the included angle of one triangle are equal to those of another.
+* ASA (angle-side-angle): If two angles and the included side of one triangle are equal to those of another.
+* RHS (right-angle-hypotenuse-side): For right triangles, if the hypotenuse and one leg are equal.
+
+---
+
+### **III. Symmetry**
+
+* **Axial symmetry (reflection):** The figure is invariant under reflection across a line (the axis of symmetry).
+* **Central symmetry (point symmetry):** The figure is invariant under a rotation of 180° about a point (the center of symmetry).
+
+---
+
+### **IV. Similarity Transformations**
+
+**Definition:**
+A *similarity transformation* is a transformation that preserves the shape of figures but may change their size; it is the composition of a dilation (homothety) and a congruence transformation.
+
+* Dilation (homothety) with center $O$ and ratio $k \neq 0$: Every point $P$ is mapped to $P'$ such that $\overrightarrow{OP'} = k \cdot \overrightarrow{OP}$.
+
+**Properties:**
+
+* Similarity transformations preserve angles, and the ratios of corresponding lengths are constant (the similarity ratio $k$).
+* The image of a segment is a segment whose length is $k$ times the original.
+* The image of a figure is *similar* to the original.
+
+**Definition:**
+Two figures are *similar* if one can be mapped onto the other by a similarity transformation.
+
+---
+
+### **V. Perimeter and Area of Similar Plane Figures**
+
+* If the ratio of similarity between two plane figures is $k$, then:
+
+  * The ratio of perimeters is also $k$.
+  * The ratio of areas is $k^2$.
+
+$$
+\frac{\text{Perimeter}_1}{\text{Perimeter}_2} = k
+$$
+
+$$
+\frac{\text{Area}_1}{\text{Area}_2} = k^2
+$$
+
+---
+
+### **VI. Surface Area and Volume of Similar Solids**
+
+* If the ratio of similarity between two solids is $k$, then:
+
+  * The ratio of surface areas is $k^2$.
+  * The ratio of volumes is $k^3$.
+
+$$
+\frac{\text{Surface Area}_1}{\text{Surface Area}_2} = k^2
+$$
+
+$$
+\frac{\text{Volume}_1}{\text{Volume}_2} = k^3
+$$
+
+---
+
+### **VII. Application of Similarity in Plane Geometry Proofs**
+
+* Similarity is often used in geometric proofs, for example:
+
+  * In right triangles, the altitude to the hypotenuse creates two smaller triangles, both similar to the original triangle and to each other.
+  * Proving theorems about ratios of segments, lengths, and areas often relies on similarity.
+  * Similarity is used in map scaling, model making, and solving real-world problems involving proportional reasoning.
+
+---
+
+### **Applications**
+
+* Congruence and similarity are fundamental concepts in geometry, underpinning the study of shapes, figures, and their transformations.
+* They are used in engineering, architecture, design, physics, and many fields where scale models and proportional reasoning are essential.
+
+---
+**If you need diagrams (for example, illustrations of transformations, similar triangles, or solids) or exact mathematical notation from the PDF, let me know the page, and I will provide an accurate transcription or description.
+**If you would like the next topic, or further explanations on a specific subtopic, just let me k
