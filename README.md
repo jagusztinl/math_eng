@@ -344,1416 +344,892 @@ Here is the **full English translation of Topic 3** from the uploaded mathematic
 
 ---
 
-## **Topic 3: The Concept of a Function. Representations and Properties of Functions. Types of Functions.**
+Certainly! Here is a **precise, literal, and complete English translation of Topic 3** (“Divisibility, Rules and Theorems of Divisibility. Prime Numbers. Numeral Systems”) from your mathematics oral matura document. The structure, logic, terminology, and formulas all follow the original closely. If you need any diagrams, images, or tables from the PDF, please specify the page and I will provide a transcription or description.
 
 ---
 
-### **Definition and Basic Concepts**
-
-> **D:** A **function** (or mapping) from set `A` to set `B` is a relation that assigns *exactly one* element of `B` to each element of `A`.
-> Notation: `f: A → B`
-> The **domain** is `A`, the **codomain** is `B`, and `f(a)` denotes the value assigned to `a ∈ A`.
-
-The **range** or **image** of the function is the set of all values `f(a)` for `a ∈ A`.
-Notation: `f(A) = {f(a) | a ∈ A}`
-
-In secondary school, we usually work with **real-valued functions of one real variable**, i.e., `f: ℝ → ℝ`.
-
-A function can be defined in several ways:
-
-* **Analytically**: using an algebraic expression (e.g., `f(x) = 2x + 3`)
-* **Graphically**: via its graph
-* **Table**: especially for discrete domains
-* **Verbal description**: e.g., “the square of a number”
+## 3. Topic: Divisibility, Divisibility Rules and Theorems. Prime Numbers. Numeral Systems.
 
 ---
 
-### **Representation**
+### **I. Divisibility**
 
-The most common representation of a function is by **graphing in a coordinate system**:
+#### **Definition:**
 
-> **D:** The **graph** of a function `f` is the set of ordered pairs:
-> `G(f) = {(x, f(x)) | x ∈ Dom(f)}`
-> This is a set of points in the Cartesian plane.
-
-To determine whether a graph represents a function, we use:
-
-> **Vertical Line Test:** A curve in the plane is the graph of a function if no vertical line intersects it more than once.
-
----
-
-### **Properties of Functions**
-
-Let `f: A → ℝ` be a real-valued function.
-
-1. **Domain**: the set of `x` values for which the function is defined.
-2. **Range**: the set of possible output values `f(x)`.
-3. **Zeros**: `f(x) = 0`
-4. **Sign**: Where the function is positive, negative, or zero.
-5. **Monotonicity**:
-
-   * **Increasing**: `f(x₁) ≤ f(x₂)` whenever `x₁ < x₂`
-   * **Decreasing**: `f(x₁) ≥ f(x₂)` whenever `x₁ < x₂`
-   * **Strictly** increasing or decreasing if inequalities are strict.
-6. **Extrema**:
-
-   * **Local maximum** at `x₀` if `f(x₀) ≥ f(x)` for values of `x` near `x₀`
-   * **Local minimum** at `x₀` if `f(x₀) ≤ f(x)` for values of `x` near `x₀`
-   * **Global max/min** if the inequality holds for all `x ∈ Dom(f)`
-7. **Periodicity**:
-
-   * `f(x + p) = f(x)` for all `x`, `p ≠ 0`: the function is **periodic** with period `p`
-8. **Parity**:
-
-   * **Even** function: `f(-x) = f(x)` (symmetric to the y-axis)
-   * **Odd** function: `f(-x) = -f(x)` (symmetric about the origin)
-9. **Continuity**:
-
-   * A function is **continuous** at a point `x₀` if `limₓ→ₓ₀ f(x) = f(x₀)`
-10. **Asymptotes**:
-
-    * **Vertical** at `x = a` if `limₓ→ₐ f(x) = ±∞`
-    * **Horizontal** at `y = b` if `limₓ→∞ f(x) = b` or `limₓ→−∞ f(x) = b`
-    * **Oblique (slant)** if `f(x) ≈ mx + b` as `x → ∞`
-
----
-
-### **Types of Functions**
-
-Let us examine **basic function types** frequently encountered in school mathematics:
-
-#### **Constant Function**
-
-`f(x) = c`
-
-* Graph: horizontal line
-* Properties: even, continuous, bounded, not invertible
-
-#### **Identity Function**
-
-`f(x) = x`
-
-* Graph: line through origin at 45°
-* Properties: odd, increasing, continuous, invertible
-
-#### **Linear Function**
-
-`f(x) = mx + b`
-
-* Graph: line with slope `m`, y-intercept `b`
-* Properties:
-
-  * If `m > 0`: increasing
-  * If `m < 0`: decreasing
-  * Continuous, invertible
-
-#### **Quadratic Function**
-
-`f(x) = ax² + bx + c`
-
-* Graph: parabola
-* Vertex at: `x = -b/2a`
-* Axis of symmetry: `x = -b/2a`
-* Direction: opens upward if `a > 0`, downward if `a < 0`
-* Properties: even if `b = 0`; bounded if `a > 0`
-
-#### **Absolute Value Function**
-
-`f(x) = |x|`
-
-* Graph: V-shaped
-* Properties:
-
-  * Even
-  * Not differentiable at 0
-  * Minimum at 0
-
-#### **Square Root Function**
-
-`f(x) = √x`
-
-* Domain: `x ≥ 0`
-* Graph: half parabola sideways
-* Properties: increasing, not even/odd, not defined for negatives
-
-#### **Reciprocal Function**
-
-`f(x) = 1/x`
-
-* Domain: `x ≠ 0`
-* Graph: two hyperbola branches
-* Properties: odd, asymptotes at `x = 0` and `y = 0`, not bounded
-
-#### **Cubic Function**
-
-`f(x) = x³`
-
-* Graph: S-shaped curve
-* Properties: odd, increasing, continuous, invertible
-
-#### **Step Function (Floor Function)**
-
-`f(x) = ⌊x⌋`
-
-* Rounds down to nearest integer
-* Graph: horizontal segments with open and closed endpoints
-* Discontinuous at integers
-
-#### **Sign Function**
-
-`f(x) = sign(x)`
+Let $a$ and $b$ be integers.
+We say that $a$ is divisible by $b$ (or $b$ divides $a$), if there exists an integer $k$ such that:
 
 $$
-f(x) = 
-\begin{cases}
--1 & \text{if } x < 0 \\
-0 & \text{if } x = 0 \\
-1 & \text{if } x > 0
-\end{cases}
+a = b \cdot k
 $$
 
-* Graph: three flat parts
-* Properties: odd, discontinuous at 0
+Notation: $b \mid a$.
 
-#### **Exponential Function**
+* If $b \mid a$, then $a$ is divisible by $b$.
+* If $b \nmid a$, then $a$ is **not** divisible by $b$.
 
-`f(x) = a^x`, `a > 0`, `a ≠ 1`
+#### **Examples:**
 
-* Properties: strictly positive, continuous, increasing if `a > 1`, decreasing if `0 < a < 1`
-* Inverse: logarithmic function
-
-#### **Logarithmic Function**
-
-`f(x) = logₐ(x)`, `a > 0`, `a ≠ 1`
-
-* Domain: `x > 0`
-* Properties: increasing if `a > 1`, decreasing if `0 < a < 1`
-* Inverse of the exponential function
-
-#### **Trigonometric Functions**
-
-* `sin(x)`, `cos(x)`: periodic with period `2π`, bounded
-* `tan(x)`: vertical asymptotes at odd multiples of `π/2`, period `π`
-* Properties:
-
-  * `sin` and `tan` are odd
-  * `cos` is even
+* $20 = 4 \times 5 \Rightarrow 4 \mid 20$, $5 \mid 20$
+* $21 = 7 \times 3 \Rightarrow 7 \mid 21$, $3 \mid 21$
+* $22$ is not divisible by $3$: $3 \nmid 22$
 
 ---
 
-### **Piecewise Functions**
+### **II. Divisibility Rules**
 
-> **D:** A function can be defined by different expressions over different parts of its domain.
-> These are **piecewise-defined functions**.
+#### **Some Basic Divisibility Rules:**
+
+* **Divisibility by 2:**
+  A number is divisible by 2 if its last digit is even.
+
+* **Divisibility by 3:**
+  A number is divisible by 3 if the sum of its digits is divisible by 3.
+
+* **Divisibility by 4:**
+  A number is divisible by 4 if the number formed by its last two digits is divisible by 4.
+
+* **Divisibility by 5:**
+  A number is divisible by 5 if its last digit is 0 or 5.
+
+* **Divisibility by 6:**
+  A number is divisible by 6 if it is divisible by both 2 and 3.
+
+* **Divisibility by 8:**
+  A number is divisible by 8 if the number formed by its last three digits is divisible by 8.
+
+* **Divisibility by 9:**
+  A number is divisible by 9 if the sum of its digits is divisible by 9.
+
+* **Divisibility by 10:**
+  A number is divisible by 10 if its last digit is 0.
+
+* **Divisibility by 11:**
+  A number is divisible by 11 if the difference between the sum of its digits in odd positions and the sum of its digits in even positions is divisible by 11 (including zero).
+
+---
+
+### **III. Theorems on Divisibility**
+
+* **If $a \mid b$ and $b \mid c$, then $a \mid c$.**
+* **If $a \mid b$ and $a \mid c$, then $a \mid (b + c)$ and $a \mid (b - c)$.**
+* **If $a \mid b$, then $a \mid b \cdot k$ for any integer $k$.**
+* **If $a \mid b$ and $b \neq 0$, then $|a| \leq |b|$.**
+
+#### **The Division Algorithm:**
+
+For any integers $a$ and $b > 0$, there exist unique integers $q$ (quotient) and $r$ (remainder), with $0 \leq r < b$, such that:
+
+$$
+a = bq + r
+$$
+
+#### **Greatest Common Divisor (GCD):**
+
+The greatest common divisor of two integers $a$ and $b$, not both zero, is the greatest positive integer that divides both.
+Notation: $\gcd(a, b)$.
+
+#### **Least Common Multiple (LCM):**
+
+The least common multiple of $a$ and $b$, denoted $\operatorname{lcm}(a, b)$, is the smallest positive integer that is divisible by both $a$ and $b$.
+
+#### **Relationship:**
+
+$$
+\gcd(a, b) \cdot \operatorname{lcm}(a, b) = |a \cdot b|
+$$
+
+---
+
+### **IV. Prime Numbers**
+
+#### **Definition:**
+
+A **prime number** is a natural number greater than 1 whose only positive divisors are 1 and itself.
+
+* 2, 3, 5, 7, 11, 13, 17, 19, 23, ... are primes.
+
+A number greater than 1 that is not prime is called a **composite number**.
+
+#### **Prime Factorization:**
+
+Every integer greater than 1 can be written as a product of prime numbers, and this factorization is unique (up to the order of the factors).
+
+---
+
+### **V. Numeral Systems**
+
+A **numeral system** is a way of expressing numbers using a set of symbols (digits) and rules for combining them.
+
+#### **Decimal System (Base 10):**
+
+* Uses digits 0–9.
+* The value of a digit depends on its position (place value).
+
+A number $N$ with digits $a_n, a_{n-1}, ..., a_1, a_0$:
+
+$$
+N = a_n \cdot 10^n + a_{n-1} \cdot 10^{n-1} + \ldots + a_1 \cdot 10^1 + a_0 \cdot 10^0
+$$
+
+#### **Binary System (Base 2):**
+
+* Uses digits 0 and 1.
+* Each digit represents a power of 2.
 
 Example:
+The binary number $1011_2$:
 
 $$
-f(x) = 
-\begin{cases}
-x^2 & \text{if } x ≤ 0 \\
-x + 1 & \text{if } x > 0
-\end{cases}
+1011_2 = 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = 8 + 0 + 2 + 1 = 11_{10}
 $$
 
-Analysis includes:
+#### **Other Numeral Systems:**
 
-* Checking continuity at `x = 0`
-* Identifying extrema, parity, etc.
+* **Octal (Base 8):** Digits 0–7.
+* **Hexadecimal (Base 16):** Digits 0–9, letters A–F.
 
----
+#### **Conversion Between Bases:**
 
-### **Transformations of Functions**
+To convert a number from base $b$ to decimal:
 
-Let `f(x)` be a base function. Then:
+$$
+N = a_n \cdot b^n + a_{n-1} \cdot b^{n-1} + \ldots + a_1 \cdot b^1 + a_0 \cdot b^0
+$$
 
-* **Vertical shift**: `f(x) + c`
-* **Horizontal shift**: `f(x - c)`
-* **Vertical stretch/shrink**: `a·f(x)`
-* **Horizontal stretch/shrink**: `f(bx)`
-* **Reflection over x-axis**: `-f(x)`
-* **Reflection over y-axis**: `f(-x)`
-
-Transformations are **composed** from inside-out:
-
-1. Modify inside the function (`x`)
-2. Then apply outside transformations
+To convert a decimal number to another base, repeatedly divide by the base and record the remainders.
 
 ---
 
-### **Applications**
+### **VI. Applications**
 
-Functions are used in every area of mathematics and applied fields:
-
-* Physics (e.g., position vs. time)
-* Economics (e.g., cost functions)
-* Computer science (e.g., hash functions)
-* Biology (e.g., growth models)
-
-Understanding function behavior is critical for modeling, interpreting graphs, solving equations, and optimization.
+* Divisibility and numeral systems are essential in number theory, computer science, cryptography, and digital electronics.
+* Prime factorization underlies encryption algorithms and coding theory.
+* Understanding numeral systems is fundamental for working with computers and digital devices.
 
 ---
+Certainly! Here is a **precise, literal, and complete English translation of Topic 4** ("Elements of Mathematical Logic. Logical Operations. Statement and Its Converse, Necessary and Sufficient Conditions, Their Presentation in Theorems and Proofs") from your mathematics oral matura document. The structure, terminology, mathematical logic, and content closely follow the original. If you need any diagrams, tables, or images from the PDF, please specify the page and I will provide a direct transcription or description.
+
+---
+
+## 4. Topic: Elements of Mathematical Logic. Logical Operations. Statement and Its Converse, Necessary and Sufficient Conditions, Their Presentation in Theorems and Proofs
+
+---
+
+### **I. Elements of Mathematical Logic**
+
+* **Statement (Proposition):**
+  A *statement* is a sentence that is either true or false, but not both at the same time.
+
+* **Truth Value:**
+  The *truth value* of a statement is whether it is true (T) or false (F).
+
+* **Compound Statement:**
+  A statement formed from simpler statements using logical operations.
+
+---
+
+### **II. Logical Operations**
+
+#### **Negation (NOT):**
+
+If $A$ is a statement, its negation is “not $A$”, denoted $\lnot A$.
+The truth value of $\lnot A$ is the opposite of the truth value of $A$.
+
+#### **Conjunction (AND):**
+
+The conjunction $A \land B$ is true if and only if both $A$ and $B$ are true.
+
+#### **Disjunction (OR):**
+
+The disjunction $A \lor B$ is true if at least one of $A$ or $B$ is true.
+
+#### **Implication (IF ... THEN):**
+
+The implication $A \rightarrow B$ is false only if $A$ is true and $B$ is false; otherwise, it is true.
+
+#### **Equivalence (IF AND ONLY IF):**
+
+The equivalence $A \leftrightarrow B$ is true if $A$ and $B$ are both true or both false.
+
+---
+
+### **III. Truth Tables**
+
+Truth tables show the truth values of compound statements for all possible truth values of their components.
+
+**Example: Implication ($A \rightarrow B$)**
+
+| $A$ | $B$ | $A \rightarrow B$ |
+| :-: | :-: | :---------------: |
+|  T  |  T  |         T         |
+|  T  |  F  |         F         |
+|  F  |  T  |         T         |
+|  F  |  F  |         T         |
+
+**Example: Equivalence ($A \leftrightarrow B$)**
+
+| $A$ | $B$ | $A \leftrightarrow B$ |
+| :-: | :-: | :-------------------: |
+|  T  |  T  |           T           |
+|  T  |  F  |           F           |
+|  F  |  T  |           F           |
+|  F  |  F  |           T           |
+
+---
+
+### **IV. Statement and Its Converse**
+
+* **Original Statement:** $A \rightarrow B$
+
+  * "If $A$ holds, then $B$ holds."
+
+* **Converse:** $B \rightarrow A$
+
+  * "If $B$ holds, then $A$ holds."
+
+* **Contrapositive:** $\lnot B \rightarrow \lnot A$
+
+  * "If $B$ does not hold, then $A$ does not hold."
+  * The contrapositive of a statement is logically equivalent to the original statement.
+
+* **Inverse:** $\lnot A \rightarrow \lnot B$
+
+  * "If $A$ does not hold, then $B$ does not hold."
 
 **Note:**
-In exam tasks, students may be asked to:
-
-* Identify properties from a graph
-* Sketch the graph from a formula
-* Solve function-related problems
-* Transform base functions
-
-Here is the **full English translation of Topic 3** from the uploaded mathematics oral exam prep document. The translation is accurate and complete, preserving every mathematical term, structure, formula, and example:
+The truth of a statement does not automatically imply the truth of its converse or inverse.
 
 ---
 
-## **Topic 3: The Concept of a Function. Representations and Properties of Functions. Types of Functions.**
+### **V. Necessary and Sufficient Conditions**
+
+* **Necessary Condition:**
+  Condition $B$ is *necessary* for $A$ if $A$ cannot be true unless $B$ is true.
+  (If $A$ is true, then $B$ must be true; $A \rightarrow B$)
+
+* **Sufficient Condition:**
+  Condition $B$ is *sufficient* for $A$ if the truth of $B$ guarantees the truth of $A$.
+  (If $B$ is true, then $A$ is true; $B \rightarrow A$)
+
+* **Necessary and Sufficient Condition:**
+  $A$ is true if and only if $B$ is true ($A \leftrightarrow B$).
+  In this case, $B$ is both necessary and sufficient for $A$.
 
 ---
 
-### **Definition and Basic Concepts**
+### **VI. Expression of Necessary and Sufficient Conditions in Theorems and Proofs**
 
-> **D:** A **function** (or mapping) from set `A` to set `B` is a relation that assigns *exactly one* element of `B` to each element of `A`.
-> Notation: `f: A → B`
-> The **domain** is `A`, the **codomain** is `B`, and `f(a)` denotes the value assigned to `a ∈ A`.
+* In the formulation of theorems, necessary and/or sufficient conditions are often specified.
 
-The **range** or **image** of the function is the set of all values `f(a)` for `a ∈ A`.
-Notation: `f(A) = {f(a) | a ∈ A}`
+* Example:
 
-In secondary school, we usually work with **real-valued functions of one real variable**, i.e., `f: ℝ → ℝ`.
+  * **Theorem:** "A number is divisible by 6 if and only if it is divisible by both 2 and 3."
 
-A function can be defined in several ways:
+    * Being divisible by 2 and 3 is necessary and sufficient for being divisible by 6.
 
-* **Analytically**: using an algebraic expression (e.g., `f(x) = 2x + 3`)
-* **Graphically**: via its graph
-* **Table**: especially for discrete domains
-* **Verbal description**: e.g., “the square of a number”
+* In proofs, these conditions guide the direction and logic of the argument:
+
+  * To prove necessity: show that if the main statement is true, then the condition must be true.
+  * To prove sufficiency: show that if the condition is true, then the main statement must be true.
 
 ---
 
-### **Representation**
+### **VII. Examples**
 
-The most common representation of a function is by **graphing in a coordinate system**:
+**Example 1:**
+**Statement:** If a number is divisible by 6, then it is divisible by 2.
 
-> **D:** The **graph** of a function `f` is the set of ordered pairs:
-> `G(f) = {(x, f(x)) | x ∈ Dom(f)}`
-> This is a set of points in the Cartesian plane.
+* Here, divisibility by 2 is a necessary condition for divisibility by 6.
 
-To determine whether a graph represents a function, we use:
+**Example 2:**
+**Statement:** If a number is divisible by 2 and by 3, then it is divisible by 6.
 
-> **Vertical Line Test:** A curve in the plane is the graph of a function if no vertical line intersects it more than once.
+* Here, divisibility by 2 and 3 is a sufficient condition for divisibility by 6.
 
----
+**Example 3:**
+**Statement:** A triangle is equilateral if and only if all its sides are equal.
 
-### **Properties of Functions**
-
-Let `f: A → ℝ` be a real-valued function.
-
-1. **Domain**: the set of `x` values for which the function is defined.
-2. **Range**: the set of possible output values `f(x)`.
-3. **Zeros**: `f(x) = 0`
-4. **Sign**: Where the function is positive, negative, or zero.
-5. **Monotonicity**:
-
-   * **Increasing**: `f(x₁) ≤ f(x₂)` whenever `x₁ < x₂`
-   * **Decreasing**: `f(x₁) ≥ f(x₂)` whenever `x₁ < x₂`
-   * **Strictly** increasing or decreasing if inequalities are strict.
-6. **Extrema**:
-
-   * **Local maximum** at `x₀` if `f(x₀) ≥ f(x)` for values of `x` near `x₀`
-   * **Local minimum** at `x₀` if `f(x₀) ≤ f(x)` for values of `x` near `x₀`
-   * **Global max/min** if the inequality holds for all `x ∈ Dom(f)`
-7. **Periodicity**:
-
-   * `f(x + p) = f(x)` for all `x`, `p ≠ 0`: the function is **periodic** with period `p`
-8. **Parity**:
-
-   * **Even** function: `f(-x) = f(x)` (symmetric to the y-axis)
-   * **Odd** function: `f(-x) = -f(x)` (symmetric about the origin)
-9. **Continuity**:
-
-   * A function is **continuous** at a point `x₀` if `limₓ→ₓ₀ f(x) = f(x₀)`
-10. **Asymptotes**:
-
-    * **Vertical** at `x = a` if `limₓ→ₐ f(x) = ±∞`
-    * **Horizontal** at `y = b` if `limₓ→∞ f(x) = b` or `limₓ→−∞ f(x) = b`
-    * **Oblique (slant)** if `f(x) ≈ mx + b` as `x → ∞`
+* The equality of all sides is a necessary and sufficient condition for a triangle to be equilateral.
 
 ---
 
-### **Types of Functions**
+### **VIII. Application in Proofs**
 
-Let us examine **basic function types** frequently encountered in school mathematics:
+* Understanding the logical structure of statements and their converses, and distinguishing between necessary and sufficient conditions, is essential in constructing and analyzing mathematical proofs.
+* Many classical proof techniques (such as direct proof, proof by contrapositive, proof by contradiction) rely on these logical relationships.
 
-#### **Constant Function**
+---
+Certainly! Here is a **precise, literal, and complete English translation of Topic 5** (“Exponentiation, Extension of the Concept of Exponentiation, Laws of Exponents. The Concept of the n-th Root. Identities of the Square Root. Power Functions and the Square Root Function”) from your mathematics oral matura document. The translation strictly follows the original mathematical structure, terminology, and includes all formulas. If you need any diagrams, images, or tables from the PDF, please specify the page and I will provide a transcription or description.
 
-`f(x) = c`
+---
 
-* Graph: horizontal line
-* Properties: even, continuous, bounded, not invertible
+## 5. Topic: Exponentiation, Extension of the Concept of Exponentiation, Laws of Exponents. The Concept of the n-th Root. Identities of the Square Root. Power Functions and the Square Root Function.
 
-#### **Identity Function**
+---
 
-`f(x) = x`
+### **I. Exponentiation**
 
-* Graph: line through origin at 45°
-* Properties: odd, increasing, continuous, invertible
+#### **Definition:**
 
-#### **Linear Function**
-
-`f(x) = mx + b`
-
-* Graph: line with slope `m`, y-intercept `b`
-* Properties:
-
-  * If `m > 0`: increasing
-  * If `m < 0`: decreasing
-  * Continuous, invertible
-
-#### **Quadratic Function**
-
-`f(x) = ax² + bx + c`
-
-* Graph: parabola
-* Vertex at: `x = -b/2a`
-* Axis of symmetry: `x = -b/2a`
-* Direction: opens upward if `a > 0`, downward if `a < 0`
-* Properties: even if `b = 0`; bounded if `a > 0`
-
-#### **Absolute Value Function**
-
-`f(x) = |x|`
-
-* Graph: V-shaped
-* Properties:
-
-  * Even
-  * Not differentiable at 0
-  * Minimum at 0
-
-#### **Square Root Function**
-
-`f(x) = √x`
-
-* Domain: `x ≥ 0`
-* Graph: half parabola sideways
-* Properties: increasing, not even/odd, not defined for negatives
-
-#### **Reciprocal Function**
-
-`f(x) = 1/x`
-
-* Domain: `x ≠ 0`
-* Graph: two hyperbola branches
-* Properties: odd, asymptotes at `x = 0` and `y = 0`, not bounded
-
-#### **Cubic Function**
-
-`f(x) = x³`
-
-* Graph: S-shaped curve
-* Properties: odd, increasing, continuous, invertible
-
-#### **Step Function (Floor Function)**
-
-`f(x) = ⌊x⌋`
-
-* Rounds down to nearest integer
-* Graph: horizontal segments with open and closed endpoints
-* Discontinuous at integers
-
-#### **Sign Function**
-
-`f(x) = sign(x)`
+If $a$ is a real number and $n$ is a natural number, then the *n-th power* of $a$ is:
 
 $$
-f(x) = 
-\begin{cases}
--1 & \text{if } x < 0 \\
-0 & \text{if } x = 0 \\
-1 & \text{if } x > 0
-\end{cases}
+a^n = \underbrace{a \cdot a \cdot a \cdot \ldots \cdot a}_{n\ \text{factors}}
 $$
 
-* Graph: three flat parts
-* Properties: odd, discontinuous at 0
+where $n \geq 1$.
 
-#### **Exponential Function**
-
-`f(x) = a^x`, `a > 0`, `a ≠ 1`
-
-* Properties: strictly positive, continuous, increasing if `a > 1`, decreasing if `0 < a < 1`
-* Inverse: logarithmic function
-
-#### **Logarithmic Function**
-
-`f(x) = logₐ(x)`, `a > 0`, `a ≠ 1`
-
-* Domain: `x > 0`
-* Properties: increasing if `a > 1`, decreasing if `0 < a < 1`
-* Inverse of the exponential function
-
-#### **Trigonometric Functions**
-
-* `sin(x)`, `cos(x)`: periodic with period `2π`, bounded
-* `tan(x)`: vertical asymptotes at odd multiples of `π/2`, period `π`
-* Properties:
-
-  * `sin` and `tan` are odd
-  * `cos` is even
-
----
-
-### **Piecewise Functions**
-
-> **D:** A function can be defined by different expressions over different parts of its domain.
-> These are **piecewise-defined functions**.
-
-Example:
+By definition:
 
 $$
-f(x) = 
-\begin{cases}
-x^2 & \text{if } x ≤ 0 \\
-x + 1 & \text{if } x > 0
-\end{cases}
+a^1 = a
 $$
 
-Analysis includes:
-
-* Checking continuity at `x = 0`
-* Identifying extrema, parity, etc.
-
----
-
-### **Transformations of Functions**
-
-Let `f(x)` be a base function. Then:
-
-* **Vertical shift**: `f(x) + c`
-* **Horizontal shift**: `f(x - c)`
-* **Vertical stretch/shrink**: `a·f(x)`
-* **Horizontal stretch/shrink**: `f(bx)`
-* **Reflection over x-axis**: `-f(x)`
-* **Reflection over y-axis**: `f(-x)`
-
-Transformations are **composed** from inside-out:
-
-1. Modify inside the function (`x`)
-2. Then apply outside transformations
-
----
-
-### **Applications**
-
-Functions are used in every area of mathematics and applied fields:
-
-* Physics (e.g., position vs. time)
-* Economics (e.g., cost functions)
-* Computer science (e.g., hash functions)
-* Biology (e.g., growth models)
-
-Understanding function behavior is critical for modeling, interpreting graphs, solving equations, and optimization.
-
----
-
-**Note:**
-In exam tasks, students may be asked to:
-
-* Identify properties from a graph
-* Sketch the graph from a formula
-* Solve function-related problems
-* Transform base functions
-
-Here is the **precise English translation of Topic 4** from the uploaded Hungarian mathematics oral exam preparation document. The translation preserves the original structure, mathematical content, formulas, and definitions accurately and without omissions:
-
----
-
-## **Topic 4: Operations with Functions, Function Transformations. Inverse Functions, Composite Functions. Monotonicity and Extremes of Functions.**
-
----
-
-### **Basic Operations on Functions**
-
-Let $f$ and $g$ be functions whose domains are subsets of $\mathbb{R}$.
-
-> **D:** The **sum** of $f$ and $g$ is the function
->
-> $$
-> $$
-
-(f + g)(x) = f(x) + g(x)
-]
-
-> defined on $D(f) \cap D(g)$.
-
-> **D:** The **difference** of $f$ and $g$:
->
-> $$
-> $$
-
-(f - g)(x) = f(x) - g(x)
-]
-
-> defined on $D(f) \cap D(g)$.
-
-> **D:** The **product** of $f$ and $g$:
->
-> $$
-> $$
-
-(f \cdot g)(x) = f(x) \cdot g(x)
-]
-
-> defined on $D(f) \cap D(g)$.
-
-> **D:** The **quotient** of $f$ and $g$:
->
-> $$
-> $$
-
-\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} \quad \text{where } g(x) \neq 0
-]
-
-> defined on $D(f) \cap D(g) \setminus \{x : g(x) = 0\}$.
-
-In school mathematics, we usually define **new functions** by applying these operations to known functions.
-
----
-
-### **Function Transformations**
-
-Let $f(x)$ be a given base function.
-
-We can derive other functions by transforming $f$:
-
-* **Vertical translation**: $f(x) + c$ (upward if $c > 0$, downward if $c < 0$)
-* **Horizontal translation**: $f(x - c)$ (rightward if $c > 0$, leftward if $c < 0$)
-* **Vertical scaling**: $a \cdot f(x)$ (stretch if $|a| > 1$, compress if $0 < |a| < 1$, reflect over x-axis if $a < 0$)
-* **Horizontal scaling**: $f(bx)$ (compress if $|b| > 1$, stretch if $0 < |b| < 1$, reflect over y-axis if $b < 0$)
-* **Reflection over the x-axis**: $-f(x)$
-* **Reflection over the y-axis**: $f(-x)$
-
-⚠️ Transformations should be applied in the following order:
-**inside the function first** (horizontal), then **outside** (vertical).
-
-**Example**:
-Given $f(x) = x^2$, analyze $g(x) = -2(x - 3)^2 + 4$:
-
-* shift right by 3
-* scale vertically by 2
-* reflect over x-axis
-* shift up by 4
-
-Graph these step-by-step starting from the base parabola.
-
----
-
-### **Inverse Function**
-
-> **D:** A function $f$ has an **inverse** if it is **bijective** (i.e., both **injective** and **surjective**).
-
-> **D:** The **inverse function** of $f$, denoted $f^{-1}$, satisfies:
-
 $$
-f(f^{-1}(x)) = f^{-1}(f(x)) = x
-$$
-
-The graph of $f^{-1}$ is the **reflection** of the graph of $f$ across the **line $y = x$**.
-
-**Procedure for finding an inverse**:
-
-1. Write $y = f(x)$
-2. Swap $x$ and $y$
-3. Solve for $y$ to get $f^{-1}(x)$
-
-**Example**:
-$f(x) = 2x + 3$
-→ $y = 2x + 3$
-→ $x = 2y + 3$
-→ $y = \frac{x - 3}{2}$
-So, $f^{-1}(x) = \frac{x - 3}{2}$
-
-**Note**: Not every function has an inverse on its entire domain!
-If necessary, restrict the domain so that the function becomes injective.
-
----
-
-### **Composite Function**
-
-> **D:** Given $f: A \to B$ and $g: B \to C$, the **composition** of $g$ and $f$ is:
-
-$$
-(g \circ f)(x) = g(f(x))
-$$
-
-* The domain of $g \circ f$ is:
-
-  $$
-  \{ x \in D(f) : f(x) \in D(g) \}
-  $$
-
-**Example**:
-Let $f(x) = x^2$, $g(x) = \sqrt{x}$
-Then $(g \circ f)(x) = \sqrt{x^2} = |x|$
-
-But $(f \circ g)(x) = (\sqrt{x})^2 = x$, defined only for $x \geq 0$
-
-⚠️ **Composition is not commutative**: $f \circ g \ne g \circ f$
-
----
-
-### **Monotonicity**
-
-> **D:** A function $f$ is:
-
-* **Increasing** on $I \subset \mathbb{R}$ if $x_1 < x_2 \Rightarrow f(x_1) \leq f(x_2)$
-* **Decreasing** if $x_1 < x_2 \Rightarrow f(x_1) \geq f(x_2)$
-* **Strictly increasing/decreasing** if the inequalities are strict.
-
-A function can be:
-
-* Monotonic on its whole domain
-* Monotonic on specific intervals only
-
-**How to analyze monotonicity**:
-
-* Study the graph (slope)
-* Analyze the sign of the **derivative** (at higher levels)
-
----
-
-### **Extrema (Maximum and Minimum Values)**
-
-> **D:** A function has a **local maximum** at $x_0$ if:
-
-$$
-\exists \varepsilon > 0: \forall x \in (x_0 - \varepsilon, x_0 + \varepsilon), f(x) \leq f(x_0)
-$$
-
-> **D:** A function has a **local minimum** at $x_0$ if:
-
-$$
-\exists \varepsilon > 0: \forall x \in (x_0 - \varepsilon, x_0 + \varepsilon), f(x) \geq f(x_0)
-$$
-
-> **D:** A **global maximum** or **minimum** satisfies the same inequality **for all** $x \in D(f)$
-
-To determine extrema:
-
-* Use **graphical analysis** at the secondary school level
-* Look for **turning points**, **vertex** (e.g. parabolas), or endpoints
-
----
-
-### **Applications**
-
-Understanding these concepts is fundamental for:
-
-* Analyzing function behavior
-* Solving inequalities
-* Sketching graphs
-* Modeling real-world phenomena
-* Optimization problems in economics, physics, engineering
-
----
-Here is the **complete and precise English translation of Topic 5** from the oral exam preparation document, following the original Hungarian content exactly—without omitting or summarizing any part, and preserving all mathematical structure and notation:
-
----
-
-## **Topic 5: Exponentiation, Extension of the Concept of Exponentiation, Laws of Exponents. The Concept of the n-th Root. Identities of the Square Root. Power Functions and the Square Root Function**
-
----
-
-### **Exponentiation with Natural Exponents**
-
-> **D:** Let $a \in \mathbb{R}$ and $n \in \mathbb{N}$. Then we define:
-
-$$
-a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ times}}, \quad a^0 = 1
-$$
-
-Basic laws of exponents (for $a, b \in \mathbb{R}$, $n, m \in \mathbb{N}$):
-
-1. $a^n \cdot a^m = a^{n+m}$
-2. $\frac{a^n}{a^m} = a^{n-m}$ (if $a \ne 0$)
-3. $(a^n)^m = a^{nm}$
-4. $(ab)^n = a^n b^n$
-5. $\left( \frac{a}{b} \right)^n = \frac{a^n}{b^n}$ (if $b \ne 0$)
-
-⚠️ Be careful: $a^n + a^m \ne a^{n+m}$ and $(a + b)^n \ne a^n + b^n$ (in general)
-
----
-
-### **Extension to Integer Exponents**
-
-> **D:** For $a \ne 0$ and $n \in \mathbb{Z}$, we define:
-
-$$
-a^{-n} = \frac{1}{a^n}
-$$
-
-Thus:
-
-$$
-a^n = \frac{1}{a^{-n}}, \quad a^0 = 1
+a^0 = 1 \quad \text{(for } a \neq 0\text{)}
 $$
 
 ---
 
-### **Extension to Rational Exponents**
+### **II. Extension of the Concept of Exponentiation**
 
-> **D:** Let $a > 0$, $m \in \mathbb{Z}$, and $n \in \mathbb{N}$, then:
-
-$$
-a^{\frac{m}{n}} = \sqrt[n]{a^m} = \left( \sqrt[n]{a} \right)^m
-$$
-
----
-
-### **The n-th Root and the Square Root**
-
-> **D:** The **n-th root** of a number $a$ (denoted $\sqrt[n]{a}$) is the non-negative number $x$ for which $x^n = a$, if such exists.
-
-If $n$ is **even**, then:
-
-* $\sqrt[n]{a}$ is defined **only for $a \ge 0$**.
-* The result is **non-negative**.
-
-If $n$ is **odd**, then:
-
-* $\sqrt[n]{a}$ is defined for **all real numbers $a$**.
-* The result can be **negative**.
-
-> **D:** The **square root** of a non-negative number $a$ is the non-negative number $x$ such that $x^2 = a$.
-> Notation: $\sqrt{a}$
-
-Identities involving square roots:
-
-1. $\sqrt{a^2} = |a|$
-2. $\sqrt{ab} = \sqrt{a} \cdot \sqrt{b}$ (if $a, b \ge 0$)
-3. $\frac{\sqrt{a}}{\sqrt{b}} = \sqrt{\frac{a}{b}}$ (if $a, b \ge 0, b \ne 0$)
-
-⚠️ Be cautious: $\sqrt{a^2} \ne a$ in general (e.g., if $a = -5$, then $\sqrt{a^2} = 5$, but $a = -5$)
-
----
-
-### **Power Functions**
-
-> **D:** A **power function** is a function of the form $f(x) = x^r$, where $r \in \mathbb{Q}$ (in higher studies $r \in \mathbb{R}$)
-
-**Key special cases**:
-
-* $f(x) = x$: identity function
-* $f(x) = x^2$: parabola
-* $f(x) = x^{-1}$: reciprocal function
-* $f(x) = \sqrt{x} = x^{1/2}$: square root function
-
-**Properties** depend on the exponent $r$:
-
-* If $r > 1$: increasing, convex
-* If $0 < r < 1$: increasing, concave
-* If $r < 0$: hyperbola-like behavior, discontinuity at 0
-
-Domain and range vary:
-
-* For even roots: domain $x \ge 0$
-* For negative exponents: domain $x \ne 0$
-
----
-
-### **Graph of the Square Root Function**
-
-Function: $f(x) = \sqrt{x}$
-
-* **Domain**: $x \ge 0$
-* **Range**: $y \ge 0$
-* **Increasing**
-* **Concave**
-* Not defined for negative $x$
-
-**Graph**: half parabola opening to the right
-
----
-
-### **Application Examples**
-
-1. **Physics**: Kinematic equations include square root or quadratic forms.
-2. **Economics**: Power functions in utility or cost functions.
-3. **Geometry**: Pythagorean theorem involves square roots.
-4. **Computer science**: Exponential time algorithms, root approximations.
-
----
-
-**Note:** In many practical problems (e.g., with radicals), it is essential to consider **domain restrictions** and whether simplifications such as $\sqrt{x^2} = x$ are **valid** over the entire domain.
-
----
-Here is the **full and accurate English translation of Topic 6** from the uploaded Hungarian oral mathematics exam guide. The translation preserves every definition, formula, and structure, without omissions or summarizations:
-
----
-
-## **Topic 6: The Concept and Properties of the Logarithm. The Exponential and Logarithmic Function. The Inverse Function.**
-
----
-
-### **Definition of Logarithm**
-
-> **D:** For any $a > 0$, $a \ne 1$, and $x > 0$, the **logarithm of $x$ to base $a$** is the number $y$ such that:
+#### **1. Negative Exponents:**
 
 $$
-a^y = x
+a^{-n} = \frac{1}{a^n} \quad (a \neq 0)
 $$
 
-This number is denoted:
+#### **2. Fractional Exponents (Roots):**
 
 $$
-\log_a x = y
+a^{\frac{1}{n}} = \sqrt[n]{a}
 $$
 
-In words: **"logarithm is the exponent to which the base must be raised to yield the argument."**
+$$
+a^{\frac{m}{n}} = (\sqrt[n]{a})^m = \sqrt[n]{a^m}
+$$
+
+* For $a > 0$, and $n \in \mathbb{N}$, $n \geq 2$.
+* If $n$ is even, $a \geq 0$.
 
 ---
 
-### **Laws of Logarithms**
+### **III. Laws of Exponents**
 
-Let $a > 0$, $a \ne 1$, and $x, y > 0$:
+For all $a, b \in \mathbb{R}$, $n, m \in \mathbb{Z}$, where the operations are defined:
 
-1. **Product rule**:
+1. **Product of powers with the same base:**
 
    $$
-   \log_a(x \cdot y) = \log_a x + \log_a y
+   a^n \cdot a^m = a^{n + m}
    $$
-2. **Quotient rule**:
+
+2. **Quotient of powers with the same base:**
+
+   $$
+   \frac{a^n}{a^m} = a^{n - m} \quad (a \neq 0)
+   $$
+
+3. **Power of a power:**
+
+   $$
+   (a^n)^m = a^{n \cdot m}
+   $$
+
+4. **Product of powers with different bases, same exponent:**
+
+   $$
+   a^n \cdot b^n = (ab)^n
+   $$
+
+5. **Quotient of powers with different bases, same exponent:**
+
+   $$
+   \frac{a^n}{b^n} = \left( \frac{a}{b} \right)^n \quad (b \neq 0)
+   $$
+
+---
+
+### **IV. The Concept of the n-th Root**
+
+The *n-th root* of $a$ is the number $b$ such that $b^n = a$.
+Notation: $b = \sqrt[n]{a}$.
+
+* For $n$ even, $a \geq 0$.
+* For $n$ odd, $a$ can be any real number.
+
+**Special case:**
+The *square root* is the 2nd root: $\sqrt{a}$.
+
+---
+
+### **V. Identities of the Square Root**
+
+For all $a, b \geq 0$:
+
+1. **Product:**
+
+   $$
+   \sqrt{a \cdot b} = \sqrt{a} \cdot \sqrt{b}
+   $$
+
+2. **Quotient:**
+
+   $$
+   \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} \quad (b > 0)
+   $$
+
+3. **Power:**
+
+   $$
+   \sqrt{a^2} = |a|
+   $$
+
+---
+
+### **VI. Power Functions**
+
+A **power function** is of the form:
+
+$$
+f(x) = x^n, \quad n \in \mathbb{R}
+$$
+
+#### **Properties:**
+
+* The domain depends on the value of $n$:
+
+  * If $n$ is a positive integer, domain: $\mathbb{R}$.
+  * If $n$ is a negative integer, domain: $\mathbb{R} \setminus \{0\}$.
+  * If $n$ is a fraction with an odd denominator, domain: $\mathbb{R}$.
+  * If $n$ is a fraction with an even denominator, domain: $[0, +\infty)$.
+
+---
+
+### **VII. The Square Root Function**
+
+The **square root function**:
+
+$$
+f(x) = \sqrt{x}
+$$
+
+* Domain: $[0, +\infty)$
+* Range: $[0, +\infty)$
+* Graph: The curve starts at the origin and increases slowly for large $x$.
+
+---
+
+### **VIII. Applications**
+
+* Exponentiation and roots are fundamental in all branches of mathematics, physics, engineering, and natural sciences.
+* Used in solving equations, simplifying expressions, working with functions, and modeling growth or decay.
+
+---
+Certainly! Here is a **precise, literal, and complete English translation of Topic 6** ("The Concept and Identities of the Logarithm. The Exponential and Logarithmic Functions. The Inverse Function") from your mathematics oral matura document. The translation closely follows the original structure, terminology, and all mathematical content and formulas. If you need diagrams, tables, or original images from the PDF, please specify the page and I will provide them.
+
+---
+
+## 6. Topic: The Concept and Identities of the Logarithm. The Exponential and Logarithmic Functions. The Inverse Function.
+
+---
+
+### **I. The Concept of the Logarithm**
+
+#### **Definition:**
+
+Let $a$ and $x$ be positive real numbers with $a \neq 1$. The **logarithm** of $x$ to base $a$, written as $\log_a x$, is the exponent to which the base $a$ must be raised to obtain $x$:
+
+$$
+a^y = x \iff y = \log_a x
+$$
+
+* $a$ is the **base** of the logarithm.
+* The logarithm is only defined for $x > 0$ and $a > 0, a \neq 1$.
+
+#### **Special Cases:**
+
+* **Common logarithm:** $\log_{10} x$
+* **Natural logarithm:** $\ln x = \log_e x$, where $e \approx 2.71828$
+
+---
+
+### **II. Identities of the Logarithm (Laws of Logarithms)**
+
+For $a > 0, a \neq 1$, and $x, y > 0$:
+
+1. **Logarithm of a product:**
+
+   $$
+   \log_a(xy) = \log_a x + \log_a y
+   $$
+
+2. **Logarithm of a quotient:**
 
    $$
    \log_a\left(\frac{x}{y}\right) = \log_a x - \log_a y
    $$
-3. **Power rule**:
+
+3. **Logarithm of a power:**
 
    $$
-   \log_a(x^r) = r \cdot \log_a x \quad \text{for } r \in \mathbb{Q}
+   \log_a(x^k) = k \cdot \log_a x
    $$
 
-From the definition:
+4. **Logarithm of the base:**
 
-* $\log_a 1 = 0$
-* $\log_a a = 1$
+   $$
+   \log_a a = 1
+   $$
 
-⚠️ **Beware of common mistakes**:
+   $$
+   \log_a 1 = 0
+   $$
 
-* $\log_a(x + y) \ne \log_a x + \log_a y$
-* $\log_a(x - y) \ne \log_a x - \log_a y$
+5. **Change of base formula:**
+
+   $$
+   \log_a x = \frac{\log_b x}{\log_b a}
+   $$
+
+   for any $b > 0, b \neq 1$.
 
 ---
 
-### **Change of Base Formula**
+### **III. The Exponential Function**
 
-> **T:** For any $a, b > 0$, $a \ne 1$, $b \ne 1$, and $x > 0$:
+#### **Definition:**
 
-$$
-\log_a x = \frac{\log_b x}{\log_b a}
-$$
-
-**Special bases**:
-
-* $\log_{10} x$: **common logarithm** (often written as $\log x$)
-* $\log_e x$: **natural logarithm** (written as $\ln x$, base $e \approx 2.718$)
-
----
-
-### **The Exponential Function**
-
-> **D:** For any base $a > 0$, $a \ne 1$, the **exponential function** is:
+For a real base $a > 0, a \neq 1$, the **exponential function** is:
 
 $$
 f(x) = a^x
 $$
 
-**Properties**:
+* The domain is $\mathbb{R}$ (all real numbers).
+* The range is $(0, +\infty)$.
 
-* Domain: $\mathbb{R}$
-* Range: $\mathbb{R}^+$
-* Continuous and strictly monotonic:
+#### **Properties:**
 
-  * **Increasing** if $a > 1$
-  * **Decreasing** if $0 < a < 1$
-* Graph passes through $(0, 1)$
-* Horizontal asymptote: $y = 0$
-
-**Applications**: compound interest, population growth, radioactive decay.
+* If $a > 1$, the function is **increasing**.
+* If $0 < a < 1$, the function is **decreasing**.
+* $a^0 = 1$
+* $a^{x + y} = a^x a^y$
+* The graph passes through the point $(0, 1)$.
 
 ---
 
-### **The Logarithmic Function**
+### **IV. The Logarithmic Function**
 
-> **D:** For base $a > 0$, $a \ne 1$, the **logarithmic function** is the inverse of the exponential:
+#### **Definition:**
+
+For a real base $a > 0, a \neq 1$, the **logarithmic function** is:
 
 $$
 f(x) = \log_a x
 $$
 
-**Properties**:
+* The domain is $(0, +\infty)$.
+* The range is $\mathbb{R}$.
 
-* Domain: $\mathbb{R}^+$
-* Range: $\mathbb{R}$
-* Continuous and strictly monotonic:
+#### **Properties:**
 
-  * **Increasing** if $a > 1$
-  * **Decreasing** if $0 < a < 1$
-* Graph passes through $(1, 0)$
-* Vertical asymptote: $x = 0$
+* If $a > 1$, the function is **increasing**.
+* If $0 < a < 1$, the function is **decreasing**.
+* $\log_a 1 = 0$
+* $\log_a a = 1$
+* The graph passes through the point $(1, 0)$.
 
 ---
 
-### **Graphical Relationship: Exponential and Logarithmic Functions**
+### **V. The Inverse Function**
 
-* They are **inverse functions** of each other.
+#### **Exponential and Logarithmic Functions as Inverses:**
+
+* The exponential function $f(x) = a^x$ and the logarithmic function $g(x) = \log_a x$ are **inverses** of each other.
+* This means:
+
+  $$
+  f(g(x)) = a^{\log_a x} = x \quad \text{for } x > 0
+  $$
+
+  $$
+  g(f(x)) = \log_a(a^x) = x \quad \text{for all } x \in \mathbb{R}
+  $$
 * Their graphs are **symmetric** with respect to the line $y = x$.
 
----
+#### **General Properties of Inverse Functions:**
 
-### **Inverse Function**
+* If $f$ is a bijective function, then its inverse $f^{-1}$ satisfies:
 
-> **D:** A function $f$ has an inverse $f^{-1}$ if it is **bijective** (injective and surjective).
+  $$
+  f^{-1}(f(x)) = x
+  $$
 
-* $f(f^{-1}(x)) = x$
-* $f^{-1}(f(x)) = x$
-
-**Graph**: Reflection of $f$ across the line $y = x$
-
-Examples:
-
-* $f(x) = a^x \Rightarrow f^{-1}(x) = \log_a x$
-* $f(x) = \log_a x \Rightarrow f^{-1}(x) = a^x$
-
-⚠️ Always verify domain restrictions!
+  $$
+  f(f^{-1}(y)) = y
+  $$
 
 ---
 
-### **Applications**
+### **VI. Applications**
 
-1. **Mathematics**: solving exponential and logarithmic equations
-2. **Physics**: half-life calculations, decibel scale
-3. **Economics**: growth models, elasticity
-4. **Biology**: pH scale, population models
-5. **Computer science**: algorithm complexity (e.g. $\log n$)
-
----
-Here is the English translation of **Tétel 7** ("Theorem 7") from the Hungarian high school advanced level oral mathematics exam preparation document:
+* Logarithms are used in many fields of mathematics and science, including exponential growth and decay, pH calculations in chemistry, the Richter scale for earthquakes, and information theory.
+* Exponential and logarithmic functions model population growth, radioactive decay, interest calculations, and more.
 
 ---
 
-## **Topic 7: Quadratic Equations and Inequalities. Equations Reducible to Quadratics. Equivalence of Equations, Loss of Roots, Extraneous Roots, Verification.**
-
-### **Definition:**
-
-An *equation (or inequality)* is a type of logical function (open sentence) that connects two mathematical expressions with an equals sign (or relational operator). The parts of the equation are referred to as the *left-hand side* and the *right-hand side*. The domain of the logical function is called the *domain of the equation (or inequality)*. The subset of the domain for which the logical function evaluates to true is called the *solution set* (or truth set) of the equation (or inequality). In the case of an equation, the elements of the solution set are referred to as *roots*.
-
-Depending on the domain and the logical assertion, we may refer to scalar equations, vector equations, tensor equations, etc.
-
-### **Definitions:**
-
-* Two equations (or inequalities) with the same domain and solution set are called **identities**.
-* Two equations (or inequalities) are said to be **equivalent** if they have the same domain and solution set.
-
-> **Note:** In practice, the domain of the equation (or inequality) is often not explicitly stated, or only an initial set is given.
+Absolutely! Here is a **precise, literal, and complete English translation of Topic 7** (“Quadratic Equations and Inequalities. Equations Reducible to Quadratic Form. Equivalence of Equations, Loss of Roots, Extraneous Roots, Verification”) from your mathematics oral matura document. All original structure, mathematical content, terminology, and formulas are preserved. If you require diagrams, tables, or images from the PDF, please specify the page and I will provide them.
 
 ---
 
-### **Quadratic Equations**
-
-A general quadratic equation has the form:
-
-$$
-ax^2 + bx + c = 0 \quad \text{where } a \neq 0
-$$
-
-Let $D = b^2 - 4ac$ be the discriminant.
-
-**Case 1:** If $D > 0$, then the equation has two distinct real roots:
-
-$$
-x_1 = \frac{-b - \sqrt{D}}{2a}, \quad x_2 = \frac{-b + \sqrt{D}}{2a}
-$$
-
-**Case 2:** If $D = 0$, then the equation has one real root:
-
-$$
-x = \frac{-b}{2a}
-$$
-
-**Case 3:** If $D < 0$, then the equation has no real roots.
+## 7. Topic: Quadratic Equations and Inequalities. Equations Reducible to Quadratic Form. Equivalence of Equations, Loss of Roots, Extraneous Roots, Verification.
 
 ---
 
-### **Relationships Between Roots and Coefficients (Viète’s Formulas):**
+### **I. Quadratic Equations**
 
-For a quadratic equation $ax^2 + bx + c = 0$ with real roots $x_1$ and $x_2$:
+#### **Definition:**
+
+A **quadratic equation** is an equation of the form:
 
 $$
-x_1 + x_2 = -\frac{b}{a}, \quad x_1 x_2 = \frac{c}{a}
+ax^2 + bx + c = 0
+$$
+
+where $a, b, c \in \mathbb{R}$, $a \neq 0$.
+
+#### **Solution Formula (Quadratic Formula):**
+
+The solutions (roots) are given by:
+
+$$
+x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+#### **Discriminant:**
+
+$$
+D = b^2 - 4ac
+$$
+
+* If $D > 0$: Two distinct real roots.
+* If $D = 0$: One real root (double root).
+* If $D < 0$: No real roots (complex roots).
+
+---
+
+#### **Viète's Formulas:**
+
+If $x_1, x_2$ are the roots:
+
+$$
+x_1 + x_2 = -\frac{b}{a}
+$$
+
+$$
+x_1 \cdot x_2 = \frac{c}{a}
 $$
 
 ---
 
-### **Quadratic Inequalities**
+#### **Special Cases:**
 
-We typically solve simple quadratic inequalities graphically (sometimes with algebraic support). After setting the expression to zero, we sketch the graph of the quadratic function and read off the solution set.
-
-**Example:**
-Solve:
-
-$$
-x(x + 6) \leq 27, \quad x \in \mathbb{R}
-$$
-
-Distribute and rearrange:
-
-$$
-x^2 + 6x - 27 \leq 0
-$$
-
-Graphing the parabola reveals the solution:
-
-$$
-M = [-9, 3]
-$$
+* **Pure quadratic equation:** $ax^2 + c = 0$
+* **Incomplete quadratic equation:** $ax^2 + bx = 0$
 
 ---
 
-### **Inequalities with Fractions**
+### **II. Quadratic Inequalities**
 
-These are best solved by:
-
-1. Moving all terms to one side.
-2. Finding a common denominator.
-3. Rewriting as a product (factored form).
-4. Analyzing signs (sign chart).
-
-**Example:**
-Solve in $\mathbb{R} \setminus \{1, 3\}$:
+A **quadratic inequality** is an inequality involving a quadratic expression:
 
 $$
-\frac{x - 1}{x - 3} < \frac{2}{x - 1}
+ax^2 + bx + c \lessgtr 0
 $$
 
-Bring to common denominator and simplify:
+#### **Solution Method:**
 
-$$
-\frac{(x - 1)^2 - 2(x - 3)}{(x - 3)(x - 1)} < 0
-$$
-
-Factor:
-
-$$
-\frac{(x - 2)^2 - 3}{(x - 3)(x - 1)} < 0
-$$
-
-Sign analysis yields:
-
-$$
-M = (-\infty, 1) \cup (2, 3) \cup (3, \infty)
-$$
+* Solve the corresponding quadratic equation to find the critical points (roots).
+* Determine the sign of the expression in the intervals defined by the roots (using a sign chart or test points).
 
 ---
 
-### **Inequalities with Square Roots**
+### **III. Equations Reducible to Quadratic Form**
 
-These are often solved graphically. Once the points of intersection are known (through solving the equality), the solution set can be determined.
+Equations that can be transformed into quadratic equations using substitution.
 
-**Example:**
+#### **Examples:**
 
-$$
-\sqrt{x - 5} \leq \sqrt{9 - x}
-$$
-
-After algebraic manipulation and domain analysis:
-
-$$
-D = [5, 9]
-$$
-
-Solving gives:
-
-$$
-M = [5, 9]
-$$
+* $x^4 - 5x^2 + 4 = 0$
+  (Let $y = x^2$, so $y^2 - 5y + 4 = 0$)
+* $x + \frac{1}{x} = 5$
+  (Multiply both sides by $x$, rearrange and substitute.)
 
 ---
 
-### **Equations Reducible to Quadratics**
+### **IV. Equivalence of Equations**
 
-There are two main types:
+Two equations are **equivalent** if they have exactly the same solution set.
 
-**a) Square root equations** that become quadratic after squaring:
-
-$$
-\sqrt{x + 2} + x = 5
-$$
-
-> Beware of extraneous roots!
-
-**b) Equations involving suitable substitutions**, e.g., exponential, trigonometric, or higher-order equations:
-
-* Let $y = x^2$, or $y = \cos x$, etc.
+* Operations that preserve equivalence: addition, subtraction, multiplication (by nonzero), division (by nonzero), rearrangement.
 
 ---
 
-### **Loss of Roots and Extraneous Roots**
+### **V. Loss of Roots, Extraneous Roots, Verification**
 
-During algebraic manipulations (especially squaring), we may perform non-equivalent operations. For example:
+* **Loss of Roots:**
+  Roots that are solutions of the original equation but are lost due to operations such as division by an expression containing the variable (which could be zero).
 
-* Squaring both sides may introduce **extraneous roots**—solutions not valid in the original domain.
-* Dividing by an expression that might be zero may result in **loss of roots**.
+* **Extraneous Roots (False Roots):**
+  Roots that appear as solutions after certain transformations (like squaring both sides or substituting), but do not satisfy the original equation.
 
-Always verify candidate solutions by substitution into the original equation.
-
----
-Here is the English translation of the **8th topic** from the Hungarian advanced-level mathematics oral exam preparation guide, rendered faithfully and with complete preservation of mathematical content, definitions, theorems, formulas, and visual elements:
-
----
-
-## **Topic 8: Characteristics of Descriptive Statistics, Diagrams. Notable Measures of Central Tendency**
-
-### **Definition and Purpose of Descriptive Statistics**
-
-Descriptive statistics serve to summarize, organize, and describe the main features of a dataset through numerical values and visual tools. It forms the basis of statistical analysis and helps us understand the structure and distribution of data.
-
-### **Key Concepts in Descriptive Statistics**
-
-#### **1. Types of Data**
-
-* **Qualitative (categorical):** data that can be grouped into categories (e.g., colors, brands).
-* **Quantitative (numerical):** measurable data (e.g., height, temperature).
-
-Quantitative data can further be subdivided:
-
-* **Discrete:** countable values (e.g., number of students).
-* **Continuous:** measurable within an interval (e.g., weight, time).
-
-#### **2. Frequency Tables**
-
-These summarize how often each value (or group of values) occurs in a dataset. Components:
-
-* Absolute frequency (fi)
-* Relative frequency (hi = fi / n)
-* Cumulative frequency (Fi)
-* Cumulative relative frequency (Hi)
-
-#### **3. Visual Representations (Diagrams)**
-
-* **Bar chart:** used for qualitative or discrete data.
-* **Histogram:** suitable for continuous data; bars are adjacent.
-* **Pie chart:** shows the proportion of categories in a whole.
-* **Line chart:** shows trends over intervals.
-* **Box plot (box-and-whisker):** represents the five-number summary (min, Q1, median, Q3, max).
-
-### **Notable Measures of Central Tendency**
-
-#### **1. Arithmetic Mean**
-
-$$
-\overline{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-$$
-
-If data has frequencies:
-
-$$
-\overline{x} = \frac{1}{n} \sum_{i=1}^{k} x_i f_i
-$$
-
-It provides a balanced value that equalizes deviations.
-
-#### **2. Median (Me)**
-
-The middle value when data is sorted in increasing order. If n is:
-
-* Odd: middle element.
-* Even: mean of the two middle values.
-
-#### **3. Mode (Mo)**
-
-The most frequently occurring value(s). There can be:
-
-* No mode (no repetitions),
-* One mode (unimodal),
-* Two modes (bimodal),
-* Multiple modes (multimodal).
-
-#### **4. Weighted Mean**
-
-If different data points have different "weights":
-
-$$
-\overline{x}_{\text{weighted}} = \frac{\sum_{i=1}^{k} w_i x_i}{\sum_{i=1}^{k} w_i}
-$$
-
-#### **5. Geometric Mean**
-
-$$
-\text{G.M.} = \sqrt[n]{x_1 \cdot x_2 \cdots x_n}
-$$
-
-Only defined for positive values.
-
-#### **6. Harmonic Mean**
-
-$$
-\text{H.M.} = \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}
-$$
-
-### **Comparison of Central Tendencies**
-
-* **Mean** is sensitive to outliers.
-* **Median** is robust and useful in skewed distributions.
-* **Mode** is useful for categorical data.
-
-### **Application Example**
-
-Consider a dataset with student test scores. We can summarize it with:
-
-* A frequency table,
-* Diagrams (e.g., histogram),
-* Calculate central tendencies to determine class performance.
-
----
-Rendben, elkészítem a 9. tétel (Függvénytani alapismeretek, függvények tulajdonságai, határérték, folytonosság. Számsorozatok. A számtani sorozat, az első n tag összege) **szó szerinti, precíz angol fordítását** matematikatanári, anyanyelvi minőségben. Minden képletet, ábrát, szerkezeti felosztást, alcímet megőrzök és a matematikai nyelvezetet angol érettségi szintre emelem. A képletek, szakszavak pontos angol megfelelőit használom.
+* **Verification:**
+  All potential solutions must be checked in the original equation to ensure they are valid.
 
 ---
 
-## 9. Topic: Basic Concepts of Functions, Properties of Functions, Limits, Continuity. Sequences. Arithmetic Sequence, Sum of the First n Terms
+### **VI. Applications**
 
-### Functions
+* Quadratic equations and inequalities appear in mathematics, physics (projectile motion), economics (profit maximization), and many real-world problems.
+* Equations reducible to quadratic form allow broader classes of problems to be solved using quadratic methods.
+* Careful verification ensures the correctness of solutions in applied problems.
 
-**Definition:**
-A function is a mapping that assigns to each element of a set exactly one element of another set (possibly the same set). The first set is called the *domain* of the function, the second is the *codomain*, and the set of all output values is the *range* (or image) of the function.
-We denote a function as $f: A \to B$, meaning $f$ maps from set $A$ to set $B$.
+---
+Certainly! Here is a **precise, literal, and complete English translation of Topic 9** (“Basic Concepts of Functions, Properties of Functions, Limit, Continuity. Sequences. The Arithmetic Sequence, Sum of the First n Terms”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content exactly, including all formulas. If you require any diagrams or layouts from the PDF, please specify the page and I will provide them.
 
-**Examples of function notations:**
+---
+
+## 9. Topic: Basic Concepts of Functions, Properties of Functions, Limit, Continuity. Sequences. The Arithmetic Sequence, Sum of the First n Terms.
+
+---
+
+### **I. Basic Concepts of Functions**
+
+#### **Definition:**
+
+A **function** is a correspondence that assigns to each element of a set exactly one element of another set (possibly the same set).
+The first set is called the *domain* of the function, the second set is the *codomain*, and the set of all output values is the *range* (or image) of the function.
+
+A function is denoted as $f: A \to B$, meaning $f$ maps from set $A$ to set $B$.
+
+#### **Examples of Function Notation:**
 
 * $f(x) = x^2$
 * $f: x \mapsto x^2$
 * $y = f(x) = x^2$, where $x \in \mathbb{R}$, $y \in \mathbb{R}^+$ (or $[0, +\infty)$)
 
-**Properties of functions:**
-The most important properties we analyze are:
+---
 
-* Domain, codomain, range
-* Injectivity (one-to-one)
-* Surjectivity (onto)
-* Bijectivity (both one-to-one and onto)
-* Even and odd functions
-* Periodicity
-* Monotonicity (increasing or decreasing)
-* Boundedness (above, below)
-* Extrema (maximum, minimum)
-* Inverse function
+### **II. Properties of Functions**
 
-#### Definitions and Properties
+Key properties to analyze:
 
-* **Domain:** The set of all possible inputs ($x$) for which the function is defined.
+* **Domain, codomain, range (image)**
 
-* **Range (image):** The set of all possible output values ($y$) that the function can attain.
+* **Injectivity (one-to-one):**
+  $f$ is injective if $x_1 \neq x_2$ implies $f(x_1) \neq f(x_2)$ for all $x_1, x_2 \in A$.
 
-* **Injective (one-to-one):** The function is injective if different elements of the domain are mapped to different elements of the codomain:
-  $\forall x_1, x_2 \in A, x_1 \ne x_2 \implies f(x_1) \ne f(x_2)$
+* **Surjectivity (onto):**
+  $f$ is surjective if for every $y \in B$, there exists $x \in A$ such that $f(x) = y$.
 
-* **Surjective (onto):** The function is surjective if for every element of the codomain there is a preimage in the domain:
-  $\forall y \in B, \exists x \in A: f(x) = y$
-
-* **Bijective:** A function is bijective if it is both injective and surjective.
+* **Bijectivity:**
+  $f$ is bijective if it is both injective and surjective.
 
 * **Even function:**
-  $f(-x) = f(x)$ for all $x$ in the domain (e.g., $x^2$)
+  $f(-x) = f(x)$ for all $x$ in the domain.
 
 * **Odd function:**
-  $f(-x) = -f(x)$ for all $x$ in the domain (e.g., $x^3$, $\sin x$)
+  $f(-x) = -f(x)$ for all $x$ in the domain.
 
-* **Periodic function:**
-  There exists a positive real number $T$ such that $f(x + T) = f(x)$ for all $x$ in the domain (e.g., $\sin x$, period $2\pi$)
+* **Periodicity:**
+  $f(x + T) = f(x)$ for some $T > 0$, for all $x$ in the domain.
 
 * **Monotonicity:**
+  *Increasing*: $f(x_1) < f(x_2)$ if $x_1 < x_2$.
+  *Decreasing*: $f(x_1) > f(x_2)$ if $x_1 < x_2$.
 
-  * Increasing: $f(x_1) < f(x_2)$ if $x_1 < x_2$
-  * Decreasing: $f(x_1) > f(x_2)$ if $x_1 < x_2$
-
-* **Bounded above/below:**
-
-  * There exists an $M$ such that $f(x) \leq M$ for all $x$ in the domain (bounded above)
-  * There exists an $m$ such that $f(x) \geq m$ for all $x$ in the domain (bounded below)
+* **Boundedness:**
+  *Bounded above*: There exists $M$ such that $f(x) \leq M$ for all $x$.
+  *Bounded below*: There exists $m$ such that $f(x) \geq m$ for all $x$.
 
 * **Maximum, minimum (extremum):**
   The greatest or least value attained by the function on its domain.
 
 * **Inverse function:**
-  If $f$ is bijective, then its inverse $f^{-1}$ exists, such that $f^{-1}(f(x)) = x$ and $f(f^{-1}(y)) = y$.
+  If $f$ is bijective, its inverse $f^{-1}$ exists, and $f^{-1}(f(x)) = x$.
 
 ---
 
-### Limits and Continuity
+### **III. Limit and Continuity**
 
-#### Limit of a function at a point
+#### **Limit of a Function at a Point**
 
-**Definition:**
-Let $f$ be defined in a neighborhood of $a$ (except possibly at $a$). We say that the limit of $f(x)$ as $x \to a$ is $A$,
+Let $f$ be defined in a neighborhood of $a$ (except possibly at $a$).
+We say the limit of $f(x)$ as $x \to a$ is $A$, written as
 
 $$
 \lim_{x \to a} f(x) = A
 $$
 
-if for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $x$ with $0 < |x - a| < \delta$, it follows that $|f(x) - A| < \varepsilon$.
+if for every $\varepsilon > 0$ there exists $\delta > 0$ such that for all $x$ with $0 < |x - a| < \delta$, it follows that $|f(x) - A| < \varepsilon$.
 
-**Left and right limits:**
+* **Left and right limits:**
 
-* The **left-hand limit** as $x \to a^-$: $\lim_{x \to a^-} f(x)$
-* The **right-hand limit** as $x \to a^+$: $\lim_{x \to a^+} f(x)$
-* The limit exists if and only if the left and right limits are equal.
+  * Left-hand limit: $\lim_{x \to a^-} f(x)$
+  * Right-hand limit: $\lim_{x \to a^+} f(x)$
+  * The limit exists if and only if the left and right limits are equal.
 
-#### Continuity
+#### **Continuity**
 
-**Definition:**
-A function $f$ is *continuous* at point $a$ if
+A function $f$ is **continuous** at point $a$ if
 
 $$
 \lim_{x \to a} f(x) = f(a)
 $$
 
-i.e., the function’s value at $a$ is equal to the limit as $x$ approaches $a$.
+That is, the value of the function at $a$ equals the limit as $x$ approaches $a$.
 
-**Types of discontinuity:**
+* **Types of discontinuity:**
 
-* Removable discontinuity (hole)
-* Jump discontinuity (step)
-* Infinite discontinuity (asymptote)
+  * Removable discontinuity (hole)
+  * Jump discontinuity (step)
+  * Infinite discontinuity (asymptote)
 
-**Theorems related to continuity:**
+* **Theorems:**
 
-* If $f$ and $g$ are continuous at $a$, then $f+g$, $f-g$, $fg$, and (if $g(a)\ne 0$) $\frac{f}{g}$ are also continuous at $a$.
+  * If $f$ and $g$ are continuous at $a$, then so are $f+g$, $f-g$, $fg$, and (if $g(a) \neq 0$) $\frac{f}{g}$.
 
 ---
 
-### Sequences
+### **IV. Sequences**
 
-**Definition:**
-A sequence is a function whose domain is the set of natural numbers ($\mathbb{N}$) or a subset thereof. We write the sequence as $(a_n)$ or $\{a_n\}$.
+#### **Definition:**
 
-**Types of sequences:**
+A **sequence** is a function whose domain is the set of natural numbers ($\mathbb{N}$) or a subset thereof.
+We write $(a_n)$ or $\{a_n\}$.
 
-* Finite/infinite
-* Monotonic (increasing, decreasing)
-* Bounded
-* Constant
+* **Types:**
 
-#### Limit of a sequence
+  * Finite/infinite
+  * Monotonic (increasing/decreasing)
+  * Bounded
+  * Constant
+
+#### **Limit of a Sequence**
 
 A sequence $(a_n)$ converges to $A$ if for every $\varepsilon > 0$ there exists $N$ such that for all $n > N$, $|a_n - A| < \varepsilon$.
+
 If such an $A$ exists, the sequence is **convergent**, otherwise **divergent**.
 
 ---
 
-### Arithmetic Sequence
+### **V. The Arithmetic Sequence**
 
-**Definition:**
-A sequence is called an arithmetic sequence if the difference between any two consecutive terms is constant. That is,
+#### **Definition:**
+
+A sequence is called an **arithmetic sequence** if the difference between any two consecutive terms is constant:
 
 $$
 a_{n+1} = a_n + d
@@ -1761,19 +1237,19 @@ $$
 
 where $d$ is the common difference.
 
-**General formula for the nth term:**
+#### **General formula for the n-th term:**
 
 $$
 a_n = a_1 + (n-1)d
 $$
 
-**Sum of the first n terms:**
+#### **Sum of the First n Terms:**
 
 $$
-S_n = a_1 + a_2 + \dots + a_n
+S_n = a_1 + a_2 + \ldots + a_n
 $$
 
-This can be calculated by the formula:
+**Formula:**
 
 $$
 S_n = \frac{n(a_1 + a_n)}{2}
@@ -1782,11 +1258,12 @@ $$
 or
 
 $$
-S_n = \frac{n\left[2a_1 + (n-1)d\right]}{2}
+S_n = \frac{n[2a_1 + (n-1)d]}{2}
 $$
 
-**Proof of the sum formula:**
-Let us write the sum forwards and backwards:
+#### **Proof of the Sum Formula:**
+
+Write the sum forward and backward:
 
 $$
 S_n = a_1 + a_2 + \ldots + a_n \\
@@ -1801,58 +1278,54 @@ $$
 
 ---
 
-### Applications
+### **VI. Applications**
 
-* The concept of function is fundamental in all branches of mathematics, as well as in natural and social sciences.
-* Limits and continuity are crucial for calculus, physics, and engineering (e.g., studying motion, rates of change).
-* Sequences and series appear in statistics, economics (e.g., payments, annuities), and many fields involving progression or accumulation.
-* The arithmetic sequence is frequently used in financial calculations, such as installment payments, and in various real-life problems involving uniform change.
-
----
-
-Here is a **precise, complete, and faithful English translation of Topic 10** from your document for the oral mathematics matura exam, following the original mathematical content, formulas, and structure. All formulas, calculations, and the structure are preserved. If you need specific diagrams or page images verbatim, let me know and I can refer directly to the rendered image for you.
+* The concept of function is fundamental in all branches of mathematics and in the natural and social sciences.
+* Limits and continuity are foundational for calculus, physics, and engineering.
+* Sequences and series are essential in statistics, economics, and any field dealing with progression or accumulation.
+* The arithmetic sequence is widely used in finance (installments), and in problems involving constant change.
 
 ---
 
-## 10. Topic: Geometric (Exponential) Sequences, Sum of the First n Terms, Infinite Geometric Series. Compound Interest, Annuities, Loan Installments. Exponential Processes in Society and Nature
+Certainly! Here is a **precise, literal, sentence-by-sentence English translation of Topic 10** ("Geometric Sequence, Sum of the First n Terms, Infinite Geometric Series. Compound Interest, Annuity, Loan Installment. Exponential Processes in Society and Nature") from your mathematics oral matura document. The original mathematical content, structure, and formulas are preserved exactly, without omission or summarization. If you require any images, diagrams, or formatting from the PDF, please specify the page and I will provide them.
 
 ---
 
-### Geometric (Exponential) Sequence
+## 10. Topic: Geometric Sequence, Sum of the First n Terms, Infinite Geometric Series. Compound Interest, Annuity, Loan Installment. Exponential Processes in Society and Nature.
 
-**Definition:**
-A sequence is called a geometric (or exponential) sequence if the ratio of any two consecutive terms is constant. That is,
+---
+
+### **I. Geometric Sequence**
+
+A sequence is called a **geometric sequence** if the ratio of any two consecutive terms is constant.
+
+That is, for all $n \geq 1$,
 
 $$
 a_{n+1} = a_n \cdot q
 $$
 
-where $q$ is the common ratio (or quotient).
+where $q$ is the common ratio.
 
-**General formula for the nth term:**
+#### **General Formula for the nth Term**
 
 $$
 a_n = a_1 \cdot q^{n-1}
 $$
 
-where:
-
-* $a_1$: the first term,
-* $q$: the common ratio,
-* $n$: the index of the term.
+where $a_1$ is the first term and $q$ is the common ratio.
 
 ---
 
-### Sum of the First n Terms
+### **II. Sum of the First n Terms**
 
-The sum of the first $n$ terms of a geometric sequence:
+The sum of the first $n$ terms of a geometric sequence is:
 
 $$
-S_n = a_1 + a_2 + \dots + a_n
+S_n = a_1 + a_1 q + a_1 q^2 + \ldots + a_1 q^{n-1}
 $$
 
-**Formula:**
-If $q \neq 1$, then
+If $q \neq 1$, the formula for the sum is:
 
 $$
 S_n = a_1 \cdot \frac{1 - q^n}{1 - q}
@@ -1864,14 +1337,15 @@ $$
 S_n = n \cdot a_1
 $$
 
-**Proof of the formula:**
+**Proof of the sum formula:**
+
 Let us consider the sum:
 
 $$
 S_n = a_1 + a_1 q + a_1 q^2 + \ldots + a_1 q^{n-1}
 $$
 
-Multiplying both sides by $q$:
+Multiply both sides by $q$:
 
 $$
 q S_n = a_1 q + a_1 q^2 + \ldots + a_1 q^{n}
@@ -1882,16 +1356,14 @@ Subtract the second equation from the first:
 $$
 S_n - q S_n = a_1 - a_1 q^n \\
 S_n (1 - q) = a_1 (1 - q^n) \\
-S_n = a_1 \frac{1 - q^n}{1 - q}
+S_n = a_1 \cdot \frac{1 - q^n}{1 - q}
 $$
-
-//
 
 ---
 
-### Infinite Geometric Series
+### **III. Infinite Geometric Series**
 
-If $|q| < 1$, the infinite geometric series converges and its sum is:
+If $|q| < 1$, the infinite geometric series converges, and its sum is:
 
 $$
 S = a_1 \cdot \frac{1}{1 - q}
@@ -1901,18 +1373,16 @@ $$
 As $n \to \infty$, $q^n \to 0$ if $|q| < 1$, so
 
 $$
-S = \lim_{n \to \infty} S_n = a_1 \frac{1 - 0}{1 - q} = a_1 \frac{1}{1 - q}
+S = \lim_{n \to \infty} S_n = a_1 \cdot \frac{1 - 0}{1 - q} = a_1 \cdot \frac{1}{1 - q}
 $$
-
-//
 
 ---
 
-### Compound Interest, Annuities, Loan Installments
+### **IV. Compound Interest, Annuity, Loan Installment**
 
 #### **Compound Interest**
 
-If an initial principal $P_0$ is invested at an interest rate of $r$ per period (where $r$ is expressed as a decimal, e.g., 0.05 for 5%), then after $n$ periods the value of the investment will be:
+If an initial amount $P_0$ is invested at an interest rate of $r$ per period (where $r$ is expressed as a decimal, e.g., 0.05 for 5%), then after $n$ periods the value of the investment will be:
 
 $$
 P_n = P_0 \cdot (1 + r)^n
@@ -1930,7 +1400,7 @@ $$
 
 (assuming the first payment is made at the end of the first period).
 
-#### **Loan Installments (Amortizing a Loan)**
+#### **Loan Installment (Amortizing a Loan)**
 
 If you borrow an amount $P$ and repay it in $n$ equal installments at an interest rate $r$ per period, the formula for the installment amount $A$ is:
 
@@ -1942,10 +1412,11 @@ This is derived from the geometric series describing the present value of the an
 
 ---
 
-### Exponential Processes in Society and Nature
+### **V. Exponential Processes in Society and Nature**
 
-**Exponential growth:**
-A process is called exponential if its rate of change is proportional to its current value. The general formula:
+A process is called **exponential** if its rate of change is proportional to its current value.
+
+The general formula:
 
 $$
 y = y_0 \cdot a^x
@@ -1953,96 +1424,272 @@ $$
 
 where:
 
-* $y_0$: initial value,
-* $a$: base of the exponent ($a > 0$, $a \neq 1$),
-* $x$: number of periods.
+* $y_0$ is the initial value,
+* $a$ is the base of the exponent ($a > 0, a \neq 1$),
+* $x$ is the number of periods.
 
-In natural and social sciences, many phenomena are modeled by exponential functions:
+**Examples of exponential processes:**
 
-* **Population growth:** If a population increases by a fixed percentage each year.
-* **Radioactive decay:** The number of undecayed nuclei decreases exponentially.
-* **Inflation:** The value of money decreases exponentially if inflation is constant.
-* **Spread of epidemics:** Number of infected can increase or decrease exponentially depending on the reproduction rate.
+* **Population growth:**
+  If a population increases by a fixed percentage each year, the population size at year $n$ is given by the exponential formula.
+
+* **Radioactive decay:**
+  The number of undecayed nuclei decreases exponentially.
+
+* **Inflation:**
+  The value of money decreases exponentially if inflation is constant.
+
+* **Spread of epidemics:**
+  The number of infected individuals can increase or decrease exponentially, depending on the reproduction rate.
 
 ---
 
-### Applications
+### **VI. Applications**
 
 * The geometric sequence models compound interest, investments, installment savings, annuities, loan repayments, and depreciation.
 * Exponential functions are used in biology (bacterial growth, population dynamics), physics (radioactive decay, capacitor discharge), economics (inflation, compound interest), and computer science (algorithmic complexity).
-* Infinite geometric series are used in physics (e.g., optics, wave phenomena), engineering, and even everyday contexts (calculating repeating decimals).
+* Infinite geometric series appear in physics (optics, wave phenomena), engineering, and everyday contexts (calculating repeating decimals).
+
+---
+Certainly! Here is a **precise, literal, sentence-by-sentence English translation of Topic 10** ("Geometric Sequence, Sum of the First n Terms, Infinite Geometric Series. Compound Interest, Annuity, Loan Installment. Exponential Processes in Society and Nature") from your mathematics oral matura document. The original mathematical content, structure, and formulas are preserved exactly, without omission or summarization. If you require any images, diagrams, or formatting from the PDF, please specify the page and I will provide them.
 
 ---
 
-**Remark:**
-If you would like the original diagrams or formulas as they appear in the PDF (for example, formulas in MathType or annotated diagrams), please let me know which page(s) or figure(s) you wish to see, and I will provide an accurate rendering or direct image snippet.
-
----
-Here is a **precise and faithful English translation** of Topic 11 from your mathematics oral exam material, preserving all mathematical content, formulas, structure, and professional terminology. If you need the original images or formula layouts as rendered in the PDF, please specify the pages and I will refer to or transcribe them directly.
+## 10. Topic: Geometric Sequence, Sum of the First n Terms, Infinite Geometric Series. Compound Interest, Annuity, Loan Installment. Exponential Processes in Society and Nature.
 
 ---
 
-## 11. Topic: The Concept of the Derivative, Rules of Differentiation. Applications of Differential Calculus (Tangents, Function Analysis, Optimization Problems)
+### **I. Geometric Sequence**
+
+A sequence is called a **geometric sequence** if the ratio of any two consecutive terms is constant.
+
+That is, for all $n \geq 1$,
+
+$$
+a_{n+1} = a_n \cdot q
+$$
+
+where $q$ is the common ratio.
+
+#### **General Formula for the nth Term**
+
+$$
+a_n = a_1 \cdot q^{n-1}
+$$
+
+where $a_1$ is the first term and $q$ is the common ratio.
 
 ---
 
-### The Concept of the Derivative
+### **II. Sum of the First n Terms**
 
-**Definition:**
+The sum of the first $n$ terms of a geometric sequence is:
+
+$$
+S_n = a_1 + a_1 q + a_1 q^2 + \ldots + a_1 q^{n-1}
+$$
+
+If $q \neq 1$, the formula for the sum is:
+
+$$
+S_n = a_1 \cdot \frac{1 - q^n}{1 - q}
+$$
+
+If $q = 1$, then all terms are equal and
+
+$$
+S_n = n \cdot a_1
+$$
+
+**Proof of the sum formula:**
+
+Let us consider the sum:
+
+$$
+S_n = a_1 + a_1 q + a_1 q^2 + \ldots + a_1 q^{n-1}
+$$
+
+Multiply both sides by $q$:
+
+$$
+q S_n = a_1 q + a_1 q^2 + \ldots + a_1 q^{n}
+$$
+
+Subtract the second equation from the first:
+
+$$
+S_n - q S_n = a_1 - a_1 q^n \\
+S_n (1 - q) = a_1 (1 - q^n) \\
+S_n = a_1 \cdot \frac{1 - q^n}{1 - q}
+$$
+
+---
+
+### **III. Infinite Geometric Series**
+
+If $|q| < 1$, the infinite geometric series converges, and its sum is:
+
+$$
+S = a_1 \cdot \frac{1}{1 - q}
+$$
+
+**Proof:**
+As $n \to \infty$, $q^n \to 0$ if $|q| < 1$, so
+
+$$
+S = \lim_{n \to \infty} S_n = a_1 \cdot \frac{1 - 0}{1 - q} = a_1 \cdot \frac{1}{1 - q}
+$$
+
+---
+
+### **IV. Compound Interest, Annuity, Loan Installment**
+
+#### **Compound Interest**
+
+If an initial amount $P_0$ is invested at an interest rate of $r$ per period (where $r$ is expressed as a decimal, e.g., 0.05 for 5%), then after $n$ periods the value of the investment will be:
+
+$$
+P_n = P_0 \cdot (1 + r)^n
+$$
+
+This is a geometric sequence with first term $P_0$ and common ratio $q = 1 + r$.
+
+#### **Annuity (Accumulated Value of Regular Deposits)**
+
+If a fixed amount $A$ is deposited at the end of each period into an account earning interest at rate $r$ per period, the accumulated value after $n$ periods is:
+
+$$
+S_n = A \cdot \frac{(1 + r)^n - 1}{r}
+$$
+
+(assuming the first payment is made at the end of the first period).
+
+#### **Loan Installment (Amortizing a Loan)**
+
+If you borrow an amount $P$ and repay it in $n$ equal installments at an interest rate $r$ per period, the formula for the installment amount $A$ is:
+
+$$
+A = P \cdot \frac{r (1 + r)^n}{(1 + r)^n - 1}
+$$
+
+This is derived from the geometric series describing the present value of the annuity of payments.
+
+---
+
+### **V. Exponential Processes in Society and Nature**
+
+A process is called **exponential** if its rate of change is proportional to its current value.
+
+The general formula:
+
+$$
+y = y_0 \cdot a^x
+$$
+
+where:
+
+* $y_0$ is the initial value,
+* $a$ is the base of the exponent ($a > 0, a \neq 1$),
+* $x$ is the number of periods.
+
+**Examples of exponential processes:**
+
+* **Population growth:**
+  If a population increases by a fixed percentage each year, the population size at year $n$ is given by the exponential formula.
+
+* **Radioactive decay:**
+  The number of undecayed nuclei decreases exponentially.
+
+* **Inflation:**
+  The value of money decreases exponentially if inflation is constant.
+
+* **Spread of epidemics:**
+  The number of infected individuals can increase or decrease exponentially, depending on the reproduction rate.
+
+---
+
+### **VI. Applications**
+
+* The geometric sequence models compound interest, investments, installment savings, annuities, loan repayments, and depreciation.
+* Exponential functions are used in biology (bacterial growth, population dynamics), physics (radioactive decay, capacitor discharge), economics (inflation, compound interest), and computer science (algorithmic complexity).
+* Infinite geometric series appear in physics (optics, wave phenomena), engineering, and everyday contexts (calculating repeating decimals).
+
+---
+Absolutely! Here is a **precise, literal, sentence-by-sentence English translation of Topic 11** (“The Concept of the Derivative, Differentiation Rules. Applications of Differential Calculus (Tangent, Function Analysis, Optimization Problems)”) from your mathematics oral matura document. All mathematical content, formulas, and the structure are faithfully preserved, without omission or summarization. If you require any diagrams, tables, or images from the PDF, please specify the page and I will provide a transcription or description.
+
+---
+
+## 11. Topic: The Concept of the Derivative, Differentiation Rules. Applications of Differential Calculus (Tangent, Function Analysis, Optimization Problems).
+
+---
+
+### **I. The Concept of the Derivative**
+
+The derivative of a function at a given point characterizes the instantaneous rate of change of the function at that point.
+
 Let $f$ be a function defined in a neighborhood of $x_0$.
-The **derivative** of $f$ at the point $x_0$ is defined as:
+
+The derivative of $f$ at the point $x_0$ is defined as:
 
 $$
 f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}
 $$
 
 if this limit exists.
-$f'(x_0)$ is called the derivative of $f$ at $x_0$, and the function $f'(x)$ is called the **derivative function** of $f$.
 
-**Interpretation:**
+$f'(x_0)$ is called the derivative of $f$ at $x_0$.
 
-* Geometric: The derivative at a point is the slope of the tangent line to the curve at that point.
-* Physical: If $s(t)$ denotes the position as a function of time, then the derivative $s'(t)$ is the instantaneous velocity at time $t$.
+The function $f'(x)$ is called the **derivative function** of $f$.
 
----
+**Geometric interpretation:**
+The derivative at a given point is the slope of the tangent line to the graph of the function at that point.
 
-### Rules of Differentiation
-
-Let $f$ and $g$ be differentiable at $x_0$, and let $c$ be a real constant. Then:
-
-1. **Linearity:**
-
-   $$
-   (f + g)'(x_0) = f'(x_0) + g'(x_0)
-   $$
-
-   $$
-   (c \cdot f)'(x_0) = c \cdot f'(x_0)
-   $$
-
-2. **Product rule:**
-
-   $$
-   (f \cdot g)'(x_0) = f'(x_0) \cdot g(x_0) + f(x_0) \cdot g'(x_0)
-   $$
-
-3. **Quotient rule:**
-   If $g(x_0) \neq 0$:
-
-   $$
-   \left( \frac{f}{g} \right)'(x_0) = \frac{f'(x_0) \cdot g(x_0) - f(x_0) \cdot g'(x_0)}{[g(x_0)]^2}
-   $$
-
-4. **Chain rule:**
-   If $f$ is differentiable at $x_0$, and $g$ is differentiable at $f(x_0)$, then:
-
-   $$
-   (g \circ f)'(x_0) = g'(f(x_0)) \cdot f'(x_0)
-   $$
+**Physical interpretation:**
+If $s(t)$ denotes the position of a moving object as a function of time, then the derivative $s'(t)$ is the instantaneous velocity at time $t$.
 
 ---
 
-### Table of Basic Derivatives
+### **II. Differentiation Rules**
+
+Let $f$ and $g$ be differentiable at $x_0$, and $c$ be a real constant.
+
+#### **1. Sum Rule:**
+
+$$
+(f + g)'(x_0) = f'(x_0) + g'(x_0)
+$$
+
+#### **2. Constant Multiple Rule:**
+
+$$
+(c \cdot f)'(x_0) = c \cdot f'(x_0)
+$$
+
+#### **3. Product Rule:**
+
+$$
+(f \cdot g)'(x_0) = f'(x_0) \cdot g(x_0) + f(x_0) \cdot g'(x_0)
+$$
+
+#### **4. Quotient Rule:**
+
+If $g(x_0) \neq 0$:
+
+$$
+\left( \frac{f}{g} \right)'(x_0) = \frac{f'(x_0)g(x_0) - f(x_0)g'(x_0)}{[g(x_0)]^2}
+$$
+
+#### **5. Chain Rule:**
+
+If $f$ is differentiable at $x_0$, and $g$ is differentiable at $f(x_0)$, then:
+
+$$
+(g \circ f)'(x_0) = g'(f(x_0)) \cdot f'(x_0)
+$$
+
+---
+
+### **III. Table of Basic Derivatives**
 
 | Function | Derivative           |
 | -------- | -------------------- |
@@ -2058,132 +1705,138 @@ Let $f$ and $g$ be differentiable at $x_0$, and let $c$ be a real constant. Then
 
 ---
 
-### Applications of Differential Calculus
+### **IV. Applications of Differential Calculus**
 
-#### 1. Tangent to a Curve
+#### **1. Tangent to a Curve**
 
-**Definition:**
 The equation of the tangent line to the curve $y = f(x)$ at the point $x_0$ is:
 
 $$
 y = f(x_0) + f'(x_0)(x - x_0)
 $$
 
-This line passes through $(x_0, f(x_0))$ and has slope $f'(x_0)$.
+This line passes through the point $(x_0, f(x_0))$ and has slope $f'(x_0)$.
 
-#### 2. Function Analysis
+---
 
-By examining the derivative, we can determine:
+#### **2. Function Analysis**
 
-* **Monotonicity:**
+By examining the sign of the derivative, we can determine the behavior of the function.
 
-  * If $f'(x) > 0$ in an interval, $f$ is increasing there.
-  * If $f'(x) < 0$ in an interval, $f$ is decreasing there.
-  * If $f'(x) = 0$, possible extremum (maximum, minimum, or inflection point).
+* If $f'(x) > 0$ in an interval, the function is **increasing** in that interval.
+* If $f'(x) < 0$ in an interval, the function is **decreasing** in that interval.
+* If $f'(x) = 0$, there may be a local extremum (maximum, minimum, or inflection point).
 
-* **Extrema (maximum/minimum points):**
+---
 
-  * If $f'(x_0) = 0$, and the sign of $f'(x)$ changes from positive to negative at $x_0$, $f$ has a local maximum at $x_0$.
-  * If the sign changes from negative to positive, $f$ has a local minimum at $x_0$.
+#### **3. Extrema (Maximum and Minimum Points)**
 
-* **Inflection point:**
-  If the second derivative $f''(x_0) = 0$ and the sign of $f''(x)$ changes at $x_0$, then $x_0$ is a point of inflection.
+If $f'(x_0) = 0$, and the sign of $f'(x)$ changes from positive to negative at $x_0$, the function has a **local maximum** at $x_0$.
 
-#### 3. Optimization Problems (Extremum Problems)
+If the sign changes from negative to positive, the function has a **local minimum** at $x_0$.
 
-Typical steps:
+---
+
+#### **4. Optimization Problems (Extremum Problems)**
+
+Typical steps in solving an optimization problem:
 
 1. Express the quantity to be optimized as a function.
-2. Find the derivative and set it to zero to locate critical points.
-3. Use the first or second derivative test to determine maxima or minima.
-4. Check the value(s) at endpoints if the interval is closed.
+2. Find the derivative and set it to zero to determine critical points.
+3. Use the first or second derivative test to determine if the critical point is a maximum or minimum.
+4. If the interval is closed, check the function values at the endpoints as well.
 
 **Example:**
-Find the maximum area of a rectangle with fixed perimeter.
+Find the maximum area of a rectangle with a fixed perimeter.
 
-Let the sides be $x$ and $y$, with $2x + 2y = p \implies y = \frac{p}{2} - x$.
-Area $A(x) = x \cdot y = x \left( \frac{p}{2} - x \right)$.
-Differentiate and set to zero:
+Let the sides be $x$ and $y$, with $2x + 2y = p \Rightarrow y = \frac{p}{2} - x$.
+
+The area as a function of $x$: $A(x) = x \cdot y = x \left( \frac{p}{2} - x \right)$.
+
+The derivative:
 
 $$
-A'(x) = \frac{p}{2} - 2x = 0 \implies x = \frac{p}{4}
+A'(x) = \frac{p}{2} - 2x
 $$
 
-So both sides are equal; the rectangle is a square.
+Setting the derivative to zero:
+
+$$
+\frac{p}{2} - 2x = 0 \implies x = \frac{p}{4}
+$$
+
+Thus, both sides are equal and the rectangle with the largest area is a square.
 
 ---
 
-### Applications
+### **V. Applications**
 
-* The concept of the derivative is foundational in natural and social sciences, engineering, and economics.
-* Used to study the motion of objects (velocity, acceleration), optimize production, determine rates of change, and much more.
-* Function analysis is essential in graphing, economic modeling, and technical applications.
-* Optimization problems are central in logistics, resource allocation, design, and other practical fields.
+The concept of the derivative is fundamental in mathematics, physics, engineering, economics, and many other fields.
 
----
-
-Certainly! Here is a **precise, literal, and complete English translation of Topic 12** from your oral mathematics matura document. All definitions, theorems, proofs, formulas, and logical structure are preserved, following the original mathematical content closely.
-If you would like any images or diagrams reproduced from the PDF, please specify the page, and I will provide a direct transcription.
+It is used to study the motion of objects (velocity, acceleration), rates of change, optimization problems, and analyzing the behavior of functions (growth, decline, maxima, minima).
 
 ---
 
-## 12. Topic: Theorems on Right-Angled Triangles. Trigonometric Functions of Acute Angles. Relationships Between Trigonometric Functions of Acute Angles. Generalization of Trigonometric Functions
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 12** (“Theorems on Right-Angled Triangles. Trigonometric Functions of Acute Angles. Relationships Among the Trigonometric Functions of Acute Angles. Generalization of Trigonometric Functions”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content, including all formulas, without omission or summarization. If you need diagrams or specific formula layouts from the PDF, please specify the page and I will provide them.
 
 ---
 
-### Theorems on Right-Angled Triangles
+## 12. Topic: Theorems on Right-Angled Triangles. Trigonometric Functions of Acute Angles. Relationships Among the Trigonometric Functions of Acute Angles. Generalization of Trigonometric Functions.
 
-**Definition:**
-A right-angled triangle is a triangle in which one of the angles is a right angle ($90^\circ$). The side opposite the right angle is called the *hypotenuse*, the other two sides are called the *legs*.
+---
 
-#### Pythagorean Theorem
+### **I. Theorems on Right-Angled Triangles**
 
-**Theorem:**
-In every right-angled triangle, the square of the hypotenuse equals the sum of the squares of the legs.
+A triangle is called a **right-angled triangle** if one of its angles is a right angle ($90^\circ$).
 
-Let $a$ and $b$ denote the lengths of the legs, and $c$ the length of the hypotenuse:
+The side opposite the right angle is called the **hypotenuse**, and the other two sides are called the **legs**.
+
+#### **Pythagorean Theorem**
+
+In every right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the two legs.
+
+Let the legs be $a$ and $b$, and the hypotenuse be $c$:
 
 $$
 c^2 = a^2 + b^2
 $$
 
-**Proof:**
-A proof can be constructed in several ways (for example, using the area of squares built on the sides, or via similar triangles).
+This theorem can be proven in several ways, for example, by constructing squares on the sides or by using similar triangles.
 
 ---
 
-### Trigonometric Functions of Acute Angles
+### **II. Trigonometric Functions of Acute Angles**
 
-**Definition:**
-Let us consider a right-angled triangle, with an acute angle $\alpha$, legs of lengths $a$ and $b$, and hypotenuse $c$:
+Let us consider a right-angled triangle, and let $\alpha$ be one of its acute angles.
+
+The sides opposite and adjacent to angle $\alpha$ are called the **opposite leg** and **adjacent leg** (with respect to $\alpha$), and the hypotenuse is as above.
 
 * **Sine of angle $\alpha$:**
 
   $$
-  \sin \alpha = \frac{\text{opposite leg}}{\text{hypotenuse}} = \frac{a}{c}
+  \sin \alpha = \frac{\text{opposite leg}}{\text{hypotenuse}}
   $$
 * **Cosine of angle $\alpha$:**
 
   $$
-  \cos \alpha = \frac{\text{adjacent leg}}{\text{hypotenuse}} = \frac{b}{c}
+  \cos \alpha = \frac{\text{adjacent leg}}{\text{hypotenuse}}
   $$
 * **Tangent of angle $\alpha$:**
 
   $$
-  \tan \alpha = \frac{\text{opposite leg}}{\text{adjacent leg}} = \frac{a}{b}
+  \tan \alpha = \frac{\text{opposite leg}}{\text{adjacent leg}}
   $$
 * **Cotangent of angle $\alpha$:**
 
   $$
-  \cot \alpha = \frac{\text{adjacent leg}}{\text{opposite leg}} = \frac{b}{a}
+  \cot \alpha = \frac{\text{adjacent leg}}{\text{opposite leg}}
   $$
 
-**Remark:**
-The sine, cosine, tangent, and cotangent of an acute angle are always positive and less than or equal to 1 (except for tangent and cotangent, which can be any positive real number).
+The sine, cosine, tangent, and cotangent of an acute angle are always positive, and for sine and cosine, their values are less than or equal to 1.
 
 ---
 
-### Relationships Among Trigonometric Functions of Acute Angles
+### **III. Relationships Among the Trigonometric Functions of Acute Angles**
 
 * **Pythagorean Identity:**
 
@@ -2191,7 +1844,7 @@ The sine, cosine, tangent, and cotangent of an acute angle are always positive a
   \sin^2 \alpha + \cos^2 \alpha = 1
   $$
 
-  (This follows from the Pythagorean theorem: $a^2 + b^2 = c^2$, so $\frac{a^2}{c^2} + \frac{b^2}{c^2} = 1$.)
+  (This is a direct consequence of the Pythagorean theorem.)
 
 * **Quotient identities:**
 
@@ -2213,7 +1866,7 @@ The sine, cosine, tangent, and cotangent of an acute angle are always positive a
   \cot \alpha = \frac{1}{\tan \alpha}
   $$
 
-* **Other relationships:**
+* **Other identities:**
 
   $$
   1 + \tan^2 \alpha = \frac{1}{\cos^2 \alpha}
@@ -2225,19 +1878,17 @@ The sine, cosine, tangent, and cotangent of an acute angle are always positive a
 
 ---
 
-### Generalization of Trigonometric Functions
+### **IV. Generalization of Trigonometric Functions**
 
-To extend trigonometric functions beyond acute angles, we use the *unit circle definition*.
+To extend the trigonometric functions beyond acute angles, we use the definition based on the unit circle.
 
-#### **Unit Circle Definition**
+Let us consider the unit circle ($x^2 + y^2 = 1$) on the coordinate plane, and let $\alpha$ be an angle measured from the positive $x$-axis.
 
-Let us consider the unit circle ($x^2 + y^2 = 1$), and let $\alpha$ be a real angle measured from the positive $x$-axis.
+* The **sine** of angle $\alpha$ is the $y$-coordinate of the point on the unit circle corresponding to the angle $\alpha$.
+* The **cosine** of angle $\alpha$ is the $x$-coordinate of the same point.
+* **Tangent** and **cotangent** are defined as before, wherever meaningful.
 
-* The **sine** of angle $\alpha$ is the $y$-coordinate of the point corresponding to $\alpha$ on the unit circle.
-* The **cosine** of angle $\alpha$ is the $x$-coordinate of the point corresponding to $\alpha$.
-* The **tangent** and **cotangent** are defined as before, where they are meaningful.
-
-Thus, for any real angle $\alpha$:
+That is, for any real angle $\alpha$:
 
 $$
 \sin \alpha = y
@@ -2257,12 +1908,12 @@ $$
 
 ---
 
-#### **Signs of Trigonometric Functions in Different Quadrants**
+#### **Signs of Trigonometric Functions in the Different Quadrants**
 
-* **I. Quadrant ($0^\circ < \alpha < 90^\circ$)**: All trigonometric functions are positive.
-* **II. Quadrant ($90^\circ < \alpha < 180^\circ$)**: Sine is positive, cosine and tangent are negative.
-* **III. Quadrant ($180^\circ < \alpha < 270^\circ$)**: Tangent is positive, sine and cosine are negative.
-* **IV. Quadrant ($270^\circ < \alpha < 360^\circ$)**: Cosine is positive, sine and tangent are negative.
+* **I. Quadrant ($0^\circ < \alpha < 90^\circ$):** All trigonometric functions are positive.
+* **II. Quadrant ($90^\circ < \alpha < 180^\circ$):** Sine is positive, cosine and tangent are negative.
+* **III. Quadrant ($180^\circ < \alpha < 270^\circ$):** Tangent is positive, sine and cosine are negative.
+* **IV. Quadrant ($270^\circ < \alpha < 360^\circ$):** Cosine is positive, sine and tangent are negative.
 
 ---
 
@@ -2275,14 +1926,15 @@ $$
 
 ---
 
-### Applications
+### **V. Applications**
 
-* Trigonometric functions are fundamental in geometry, physics (wave motion, oscillations), engineering (signal processing), astronomy, and many other sciences.
-* They are used to model periodic phenomena (day-night cycle, seasonal changes), and in calculations involving angles and distances (navigation, surveying).
+Trigonometric functions are widely used in geometry, physics (e.g., describing oscillations and waves), engineering (signal processing), and many other sciences.
+
+They are essential for modeling periodic phenomena (such as daily and seasonal cycles) and in calculations involving angles and distances (navigation, surveying).
 
 ---
-Absolutely! Below is a **precise and complete English translation of Topic 13** from your mathematics oral matura document, following the original structure, terminology, mathematical content, and formulas as closely as possible.
-If you need the original images or diagrams exactly as in the PDF, please let me know the page and I will transcribe or describe them accurately.
+
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 13** (“Notable Lines, Points, and Circles of Triangles”) from your mathematics oral matura document. The translation preserves the original mathematical structure, logical order, terminology, and all formulas, with nothing omitted or summarized. If you require diagrams or formatting as in the PDF, please specify the page and I will provide a direct transcription or description.
 
 ---
 
@@ -2292,130 +1944,151 @@ If you need the original images or diagrams exactly as in the PDF, please let me
 
 ### **Notable Lines of a Triangle**
 
-In every triangle, certain lines are of particular importance. These include:
+In every triangle, certain lines are of particular importance.
 
-1. **Median:**
-   A *median* of a triangle is a line segment connecting a vertex to the midpoint of the opposite side.
+These include:
 
-   * **Property:**
-     The three medians of a triangle intersect at a single point, called the *centroid* (center of gravity, or barycenter).
+**1. Median:**
+A *median* of a triangle is a line segment connecting a vertex to the midpoint of the opposite side.
 
-   * **Centroid ($S$):**
-     The centroid divides each median in a ratio of $2:1$, counting from the vertex. If the triangle’s vertices are $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, the centroid’s coordinates are:
+**Property:**
+The three medians of a triangle intersect at a single point, called the *centroid* (or center of gravity, barycenter).
 
-     $$
-     S \left( \frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3} \right)
-     $$
+**Centroid ($S$):**
+The centroid divides each median in a ratio of $2:1$, measured from the vertex.
 
-2. **Angle Bisector:**
-   An *angle bisector* is a line segment that divides one of the angles of the triangle into two equal angles and meets the opposite side.
+If the triangle’s vertices are $A(x_1, y_1)$, $B(x_2, y_2)$, $C(x_3, y_3)$, then the centroid’s coordinates are:
 
-   * **Property:**
-     The three angle bisectors meet at one point, the *incenter* of the triangle.
+$$
+S \left( \frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3} \right)
+$$
 
-   * **Incenter ($I$):**
-     The incenter is the center of the *incircle* (the circle inscribed in the triangle).
+---
 
-3. **Altitude:**
-   An *altitude* (or height) is a line segment drawn from a vertex and perpendicular to the opposite side (or its extension).
+**2. Angle Bisector:**
+An *angle bisector* is a line segment that divides one of the angles of the triangle into two equal angles and meets the opposite side.
 
-   * **Property:**
-     The three altitudes meet at one point, called the *orthocenter* ($M$) of the triangle.
+**Property:**
+The three angle bisectors meet at one point, called the *incenter* of the triangle.
 
-4. **Perpendicular Bisector:**
-   The *perpendicular bisector* of a side is the line that passes through the midpoint of the side and is perpendicular to it.
+**Incenter ($I$):**
+The incenter is the center of the *incircle* (the circle inscribed in the triangle).
 
-   * **Property:**
-     The three perpendicular bisectors of the sides meet at one point, called the *circumcenter* ($O$) of the triangle.
+---
+
+**3. Altitude:**
+An *altitude* (or height) is a line segment drawn from a vertex and perpendicular to the opposite side (or its extension).
+
+**Property:**
+The three altitudes meet at one point, called the *orthocenter* ($M$) of the triangle.
+
+---
+
+**4. Perpendicular Bisector:**
+The *perpendicular bisector* of a side is the line that passes through the midpoint of the side and is perpendicular to it.
+
+**Property:**
+The three perpendicular bisectors of the sides meet at one point, called the *circumcenter* ($O$) of the triangle.
 
 ---
 
 ### **Notable Points of a Triangle**
 
-1. **Centroid ($S$):**
-   The intersection point of the three medians.
+**1. Centroid ($S$):**
+The intersection point of the three medians.
 
-2. **Incenter ($I$):**
-   The intersection point of the three angle bisectors.
+**2. Incenter ($I$):**
+The intersection point of the three angle bisectors.
 
-3. **Orthocenter ($M$):**
-   The intersection point of the three altitudes.
+**3. Orthocenter ($M$):**
+The intersection point of the three altitudes.
 
-4. **Circumcenter ($O$):**
-   The intersection point of the three perpendicular bisectors.
+**4. Circumcenter ($O$):**
+The intersection point of the three perpendicular bisectors.
 
 ---
 
 ### **Notable Circles of a Triangle**
 
-1. **Circumcircle (circumscribed circle):**
-   The unique circle passing through all three vertices of the triangle.
+**1. Circumcircle (Circumscribed Circle):**
+The unique circle passing through all three vertices of the triangle.
 
-   * **Circumcenter ($O$):**
-     The center of the circumcircle is the intersection of the perpendicular bisectors.
-   * **Radius ($R$):**
-     For a triangle with side lengths $a, b, c$ and area $T$:
+**Circumcenter ($O$):**
+The center of the circumcircle is the intersection of the perpendicular bisectors.
 
-     $$
-     R = \frac{abc}{4T}
-     $$
+**Radius ($R$):**
+For a triangle with side lengths $a, b, c$ and area $T$:
 
-2. **Incircle (inscribed circle):**
-   The unique circle tangent to all three sides of the triangle.
+$$
+R = \frac{abc}{4T}
+$$
 
-   * **Incenter ($I$):**
-     The center of the incircle is the intersection of the angle bisectors.
-   * **Radius ($r$):**
-     The radius of the incircle is:
+---
 
-     $$
-     r = \frac{T}{s}
-     $$
+**2. Incircle (Inscribed Circle):**
+The unique circle tangent to all three sides of the triangle.
 
-     where $T$ is the area and $s = \frac{a + b + c}{2}$ is the semi-perimeter.
+**Incenter ($I$):**
+The center of the incircle is the intersection of the angle bisectors.
 
-3. **Excircles (escribed circles):**
-   Each triangle has three *excircles*, each tangent to one side of the triangle and to the extensions of the other two sides.
+**Radius ($r$):**
+The radius of the incircle is:
+
+$$
+r = \frac{T}{s}
+$$
+
+where $T$ is the area and $s = \frac{a + b + c}{2}$ is the semi-perimeter.
+
+---
+
+**3. Excircles (Escribed Circles):**
+Each triangle has three *excircles*, each tangent to one side of the triangle and to the extensions of the other two sides.
 
 ---
 
 ### **Further Properties and Noteworthy Theorems**
 
-* The centroid, circumcenter, and orthocenter are collinear; they lie on the so-called *Euler line* of the triangle.
-* The incenter generally does not lie on the Euler line.
-* The nine-point circle passes through:
+The centroid, circumcenter, and orthocenter are collinear; they lie on the so-called *Euler line* of the triangle.
 
-  * The midpoint of each side,
-  * The foot of each altitude,
-  * The midpoint of the segment from each vertex to the orthocenter.
+The incenter generally does not lie on the Euler line.
+
+The nine-point circle passes through:
+
+* The midpoint of each side,
+* The foot of each altitude,
+* The midpoint of the segment from each vertex to the orthocenter.
 
 ---
 
 ### **Applications**
 
-* The notable lines, points, and circles of a triangle are central in geometric constructions, proofs, and problem solving.
-* They play an important role in classical geometry, trigonometry, and modern applications (such as engineering, architecture, and computer graphics).
-* Construction tasks often require finding the incenter, centroid, circumcenter, or orthocenter for given geometric constraints.
+The notable lines, points, and circles of a triangle are central in geometric constructions, proofs, and problem solving.
+
+They play an important role in classical geometry, trigonometry, and modern applications (such as engineering, architecture, and computer graphics).
+
+Construction tasks often require finding the incenter, centroid, circumcenter, or orthocenter for given geometric constraints.
 
 ---
-Certainly! Here is the **precise, word-for-word English translation of Topic 14** from your oral mathematics matura document. The structure, definitions, theorems, proofs, formulas, and logical flow are preserved as in the original. If you require any original diagrams or formula formatting as in the PDF, please specify the page and I will transcribe or describe them.
+
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 14** (“Relationships Among the Sides of General Triangles, Among the Angles, and Between the Sides and Angles”) from your mathematics oral matura document. All mathematical structure, formulas, and logic are preserved, and nothing is omitted or summarized. If you require diagrams or exact formatting as in the PDF, please specify the page and I will provide a transcription or description.
 
 ---
 
-## 14. Topic: Relationships Among the Sides of a General Triangle, Among the Angles, and Between the Sides and Angles
+## 14. Topic: Relationships Among the Sides of General Triangles, Among the Angles, and Between the Sides and Angles.
 
 ---
 
 ### **I. Relationships Among the Sides and Angles of a General Triangle**
 
-Consider an arbitrary triangle $ABC$, with side lengths $a, b, c$ opposite to vertices $A, B, C$, respectively, and with interior angles $\alpha, \beta, \gamma$ at these vertices.
+Let $ABC$ be an arbitrary triangle, with side lengths $a, b, c$ opposite the respective vertices $A, B, C$, and with interior angles $\alpha, \beta, \gamma$ at these vertices.
 
 ---
 
-### **1. Triangle Inequality**
+#### **1. Triangle Inequality**
 
 **Theorem:**
-In every triangle, the length of any side is less than the sum and greater than the difference of the lengths of the other two sides:
+In every triangle, the length of any side is less than the sum and greater than the difference of the other two sides.
 
 $$
 |a - b| < c < a + b
@@ -2425,7 +2098,7 @@ $$
 
 ---
 
-### **2. The Law of Sines (Sine Law)**
+#### **2. Law of Sines**
 
 **Theorem:**
 In every triangle:
@@ -2437,11 +2110,12 @@ $$
 where $R$ is the radius of the circumscribed circle (circumradius).
 
 **Proof:**
-Draw the circumscribed circle of triangle $ABC$. Using the definition of the sine of a central angle and inscribed angle, the relationship follows.
+Draw the circumscribed circle of triangle $ABC$.
+Using the definitions of the sine of the central and inscribed angle, the relationship follows.
 
 ---
 
-### **3. The Law of Cosines (Cosine Law)**
+#### **3. Law of Cosines**
 
 **Theorem:**
 For any triangle:
@@ -2459,11 +2133,11 @@ c^2 = a^2 + b^2 - 2ab \cos \gamma
 $$
 
 **Proof:**
-The Law of Cosines can be derived using the Pythagorean Theorem by dropping a height and applying the definitions of cosine in the resulting right triangles.
+The law of cosines can be derived from the Pythagorean theorem by dropping a height and applying the definition of cosine in the right triangles formed.
 
 ---
 
-### **4. The Law of Tangents (Tangent Law)**
+#### **4. Law of Tangents**
 
 **Theorem:**
 In any triangle:
@@ -2474,37 +2148,37 @@ $$
 
 ---
 
-### **5. Area Formulas for a Triangle**
+#### **5. Area Formulas for a Triangle**
 
-**Area using two sides and the included angle:**
+* **Area using two sides and the included angle:**
 
-$$
-T = \frac{1}{2}ab\sin \gamma
-$$
+  $$
+  T = \frac{1}{2}ab\sin \gamma
+  $$
 
-(Analogously for other pairs of sides and the included angle.)
+  (Similarly, for other side pairs and included angle.)
 
-**Area using all three sides (Heron's formula):**
+* **Area using all three sides (Heron's formula):**
 
-$$
-T = \sqrt{s(s-a)(s-b)(s-c)}
-$$
+  $$
+  T = \sqrt{s(s-a)(s-b)(s-c)}
+  $$
 
-where $s = \frac{a+b+c}{2}$ is the semi-perimeter.
+  where $s = \frac{a+b+c}{2}$ is the semi-perimeter.
 
-**Area using the radius of the inscribed circle:**
+* **Area using the inradius:**
 
-$$
-T = r \cdot s
-$$
+  $$
+  T = r \cdot s
+  $$
 
-where $r$ is the inradius and $s$ is the semi-perimeter.
+  where $r$ is the inradius and $s$ the semi-perimeter.
 
-**Area using the circumradius:**
+* **Area using the circumradius:**
 
-$$
-T = \frac{abc}{4R}
-$$
+  $$
+  T = \frac{abc}{4R}
+  $$
 
 ---
 
@@ -2521,32 +2195,33 @@ $$
 
 ### **III. Applications**
 
-* These relationships are essential for solving triangles (determining unknown sides or angles given sufficient data).
-* Widely used in geometry, trigonometry, engineering, architecture, navigation, and physics.
+These relationships are fundamental for solving triangles (determining unknown sides or angles from given data).
+
+They are widely used in geometry, trigonometry, engineering, architecture, navigation, and physics.
 
 ---
-Of course! Below is a **precise, literal, and complete English translation of Topic 15** from your oral mathematics matura document, following the original structure, definitions, theorems, and formulas as closely as possible. If you need images or specific diagrams exactly as in the PDF, please specify the page and I will provide the transcription or a description.
+Certainly! Here is a **precise, sentence-by-sentence English translation of Topic 15** (“Congruence Transformations, Congruence of Figures. Symmetry. Similarity Transformations. Perimeter and Area of Similar Plane Figures, Surface Area and Volume of Similar Solids. Application of Similarity in Proofs of Plane Geometry Theorems”) from your mathematics oral matura document. The translation preserves the original mathematical structure, terminology, logic, and all formulas, without omission or summarization. If you need diagrams or original layouts from the PDF, please specify the page and I will provide them.
 
 ---
 
-## 15. Topic: Congruence Transformations, Congruence of Figures. Symmetry. Similarity Transformations. Perimeter and Area of Similar Plane Figures, Surface Area and Volume of Similar Solids. Application of Similarity in Proofs of Plane Geometry Theorems
+## 15. Topic: Congruence Transformations, Congruence of Figures. Symmetry. Similarity Transformations. Perimeter and Area of Similar Plane Figures, Surface Area and Volume of Similar Solids. Application of Similarity in Proofs of Plane Geometry Theorems.
 
 ---
 
 ### **I. Congruence Transformations**
 
-**Definition:**
-A *congruence transformation* (isometry) is a transformation of the plane (or space) that preserves distances (lengths).
-Congruence transformations in the plane include:
+A **congruence transformation** (isometry) is a transformation of the plane (or space) that preserves distances (lengths).
 
-* Translation (shift)
-* Rotation
-* Reflection (across a line)
-* Glide reflection (reflection followed by translation along the axis)
+The congruence transformations of the plane are:
+
+* **Translation (shift)**
+* **Rotation**
+* **Reflection (across a line)**
+* **Glide reflection** (reflection followed by a translation along the axis)
 
 **Properties:**
 
-* Congruence transformations preserve distances, angles, areas, perimeters, and the congruence of figures.
+* Congruence transformations preserve distances, angles, areas, perimeters, and congruence of figures.
 * The image of a segment is a segment of the same length.
 * The image of a figure is congruent to the original.
 
@@ -2554,51 +2229,50 @@ Congruence transformations in the plane include:
 
 ### **II. Congruence of Figures**
 
-**Definition:**
-Two plane figures are called *congruent* if one can be mapped onto the other by a congruence transformation.
+Two plane figures are said to be **congruent** if one can be mapped onto the other by a congruence transformation.
 
-* For triangles: Two triangles are congruent if and only if their corresponding sides and corresponding angles are equal.
+**Congruence of triangles:**
+
+* Two triangles are congruent if their corresponding sides and corresponding angles are equal.
 
 **Criteria for triangle congruence:**
 
-* SSS (side-side-side): If three sides of one triangle are equal to three sides of another.
-* SAS (side-angle-side): If two sides and the included angle of one triangle are equal to those of another.
-* ASA (angle-side-angle): If two angles and the included side of one triangle are equal to those of another.
-* RHS (right-angle-hypotenuse-side): For right triangles, if the hypotenuse and one leg are equal.
+* **SSS (side-side-side):** If the three sides of one triangle are equal to the three sides of another triangle.
+* **SAS (side-angle-side):** If two sides and the included angle of one triangle are equal to those of another triangle.
+* **ASA (angle-side-angle):** If two angles and the included side of one triangle are equal to those of another triangle.
+* **RHS (right-angle-hypotenuse-side):** For right triangles, if the hypotenuse and one leg are equal.
 
 ---
 
 ### **III. Symmetry**
 
-* **Axial symmetry (reflection):** The figure is invariant under reflection across a line (the axis of symmetry).
-* **Central symmetry (point symmetry):** The figure is invariant under a rotation of 180° about a point (the center of symmetry).
+* **Axial symmetry (reflection):** The figure is invariant under reflection across a line (axis of symmetry).
+* **Central symmetry (point symmetry):** The figure is invariant under a rotation of 180° about a point (center of symmetry).
 
 ---
 
 ### **IV. Similarity Transformations**
 
-**Definition:**
-A *similarity transformation* is a transformation that preserves the shape of figures but may change their size; it is the composition of a dilation (homothety) and a congruence transformation.
+A **similarity transformation** is a transformation that preserves the shape of figures but may change their size; it is the composition of a dilation (homothety) and a congruence transformation.
 
-* Dilation (homothety) with center $O$ and ratio $k \neq 0$: Every point $P$ is mapped to $P'$ such that $\overrightarrow{OP'} = k \cdot \overrightarrow{OP}$.
+* **Dilation (homothety):** With center $O$ and ratio $k \neq 0$: Every point $P$ is mapped to $P'$ such that $\overrightarrow{OP'} = k \cdot \overrightarrow{OP}$.
 
 **Properties:**
 
 * Similarity transformations preserve angles, and the ratios of corresponding lengths are constant (the similarity ratio $k$).
 * The image of a segment is a segment whose length is $k$ times the original.
-* The image of a figure is *similar* to the original.
+* The image of a figure is similar to the original.
 
-**Definition:**
-Two figures are *similar* if one can be mapped onto the other by a similarity transformation.
+Two figures are **similar** if one can be mapped onto the other by a similarity transformation.
 
 ---
 
 ### **V. Perimeter and Area of Similar Plane Figures**
 
-* If the ratio of similarity between two plane figures is $k$, then:
+If the ratio of similarity between two plane figures is $k$, then:
 
-  * The ratio of perimeters is also $k$.
-  * The ratio of areas is $k^2$.
+* The ratio of their perimeters is also $k$.
+* The ratio of their areas is $k^2$.
 
 $$
 \frac{\text{Perimeter}_1}{\text{Perimeter}_2} = k
@@ -2612,10 +2286,10 @@ $$
 
 ### **VI. Surface Area and Volume of Similar Solids**
 
-* If the ratio of similarity between two solids is $k$, then:
+If the similarity ratio between two solids is $k$, then:
 
-  * The ratio of surface areas is $k^2$.
-  * The ratio of volumes is $k^3$.
+* The ratio of their surface areas is $k^2$.
+* The ratio of their volumes is $k^3$.
 
 $$
 \frac{\text{Surface Area}_1}{\text{Surface Area}_2} = k^2
@@ -2627,21 +2301,1189 @@ $$
 
 ---
 
-### **VII. Application of Similarity in Plane Geometry Proofs**
+### **VII. Application of Similarity in Proofs of Plane Geometry Theorems**
 
-* Similarity is often used in geometric proofs, for example:
+Similarity is often used in geometric proofs.
 
-  * In right triangles, the altitude to the hypotenuse creates two smaller triangles, both similar to the original triangle and to each other.
-  * Proving theorems about ratios of segments, lengths, and areas often relies on similarity.
-  * Similarity is used in map scaling, model making, and solving real-world problems involving proportional reasoning.
+For example:
+
+* In right triangles, the altitude to the hypotenuse creates two smaller triangles that are both similar to the original triangle and to each other.
+* Proving theorems about the ratios of segments, lengths, and areas often relies on similarity.
+* Similarity is used in scaling maps, making models, and solving real-life problems involving proportional reasoning.
+
+---
+
+### **VIII. Applications**
+
+Congruence and similarity are fundamental concepts in geometry.
+
+They are used in engineering, architecture, design, physics, and many fields where scale models and proportional reasoning are essential.
 
 ---
 
-### **Applications**
-
-* Congruence and similarity are fundamental concepts in geometry, underpinning the study of shapes, figures, and their transformations.
-* They are used in engineering, architecture, design, physics, and many fields where scale models and proportional reasoning are essential.
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 16** (“Properties of Convex Polygons. Regular Polygons. Graphs”) from your mathematics oral matura document. The translation preserves the original mathematical structure, logical order, terminology, and all formulas, with nothing omitted or summarized. If you need diagrams or original layouts from the PDF, please specify the page and I will provide them.
 
 ---
-**If you need diagrams (for example, illustrations of transformations, similar triangles, or solids) or exact mathematical notation from the PDF, let me know the page, and I will provide an accurate transcription or description.
-**If you would like the next topic, or further explanations on a specific subtopic, just let me k
+
+## 16. Topic: Properties of Convex Polygons. Regular Polygons. Graphs.
+
+---
+
+### **I. Properties of Convex Polygons**
+
+A **polygon** is a plane figure bounded by a finite number of straight line segments (sides) connected end to end.
+
+A polygon is called **convex** if any line segment connecting two points inside the polygon lies entirely within the polygon.
+
+In a convex polygon, all interior angles are less than $180^\circ$.
+
+The sum of the interior angles of a convex $n$-gon is:
+
+$$
+(n - 2) \cdot 180^\circ
+$$
+
+where $n$ is the number of sides (vertices) of the polygon.
+
+The sum of the exterior angles of any convex polygon is always $360^\circ$.
+
+---
+
+### **II. Regular Polygons**
+
+A polygon is called **regular** if all of its sides are equal in length and all of its interior angles are equal.
+
+A regular $n$-gon can be inscribed in a circle, meaning all its vertices lie on a common circle.
+
+The measure of each interior angle of a regular $n$-gon is:
+
+$$
+\frac{(n - 2) \cdot 180^\circ}{n}
+$$
+
+The measure of each exterior angle is:
+
+$$
+\frac{360^\circ}{n}
+$$
+
+The area ($A$) of a regular $n$-gon with side length $a$ and apothem $r$ (the distance from the center to the midpoint of a side) is:
+
+$$
+A = \frac{n a r}{2}
+$$
+
+The radius ($R$) of the circumscribed circle (the distance from the center to a vertex) is:
+
+$$
+R = \frac{a}{2 \sin \frac{180^\circ}{n}}
+$$
+
+The apothem ($r$) can be expressed as:
+
+$$
+r = \frac{a}{2 \tan \frac{180^\circ}{n}}
+$$
+
+---
+
+### **III. Graphs**
+
+A **graph** consists of a finite set of points, called **vertices** (or nodes), and a set of **edges** (or arcs) that connect pairs of vertices.
+
+Graphs are used to represent relationships and connections between objects.
+
+**Types of graphs:**
+
+* **Simple graph:** No loops (edges connecting a vertex to itself) and no multiple edges between the same pair of vertices.
+* **Multigraph:** May have multiple edges between the same pair of vertices.
+* **Directed graph (digraph):** The edges have a direction; they are ordered pairs of vertices.
+
+**Degree of a vertex:**
+The number of edges incident to the vertex (for directed graphs, distinguish in-degree and out-degree).
+
+**Connected graph:**
+A graph is connected if there is a path between any two vertices.
+
+**Complete graph:**
+A graph in which every pair of vertices is connected by an edge.
+
+**Cycle:**
+A sequence of edges that starts and ends at the same vertex, with all vertices and edges distinct (except for the start/end vertex).
+
+**Tree:**
+A connected graph with no cycles.
+
+**Planar graph:**
+A graph that can be drawn on the plane without edges crossing.
+
+---
+
+### **IV. Applications**
+
+Convex and regular polygons are important in geometry, architecture, art, and nature (for example, honeycomb structures).
+
+Graphs have a wide range of applications in computer science, network theory, transportation, biology, and social sciences, as they model relationships and connections.
+
+---
+
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 17** (“The Circle and Its Parts. Inscribed Angle, Central Angle, Angle of View. Cyclic Quadrilaterals, Tangential Quadrilaterals”) from your mathematics oral matura document. The translation preserves the original structure, terminology, and all formulas, with nothing omitted or summarized. If you require diagrams or original formatting from the PDF, please specify the page and I will provide them.
+
+---
+
+## 17. Topic: The Circle and Its Parts. Inscribed Angle, Central Angle, Angle of View. Cyclic Quadrilaterals, Tangential Quadrilaterals.
+
+---
+
+### **I. The Circle and Its Parts**
+
+A **circle** is the set of all points in a plane that are at a given distance (called the radius) from a fixed point (called the center).
+
+* The **radius** ($r$) is the distance from the center to any point on the circle.
+* The **diameter** ($d$) is the segment passing through the center with endpoints on the circle; its length is $d = 2r$.
+* A **chord** is a segment with both endpoints on the circle.
+* A **secant** is a line that intersects the circle in two points.
+* A **tangent** is a line that touches the circle at exactly one point.
+* An **arc** is a part of the circle between two points.
+* A **sector** is a region bounded by two radii and the arc between them.
+* A **segment of a circle** is a region bounded by a chord and the corresponding arc.
+
+---
+
+### **II. Central Angle, Inscribed Angle, Angle of View**
+
+* A **central angle** is an angle whose vertex is at the center of the circle and whose sides pass through two points on the circle.
+
+  * The measure of a central angle is equal to the measure of the arc it intercepts.
+
+* An **inscribed angle** is an angle whose vertex is on the circle and whose sides pass through two other points on the circle.
+
+  * The measure of an inscribed angle is half the measure of the intercepted arc.
+
+  $$
+  \text{If } \alpha \text{ is the inscribed angle and } \beta \text{ is the central angle subtending the same arc:}
+  $$
+
+  $$
+  \alpha = \frac{\beta}{2}
+  $$
+
+* The **angle of view** (apparent angle) from a given point to a segment or an arc is the angle under which the segment or arc is seen from that point.
+
+---
+
+### **III. Properties and Theorems Related to Angles**
+
+* The measure of the angle subtended by a chord (not passing through the center) is equal to half the measure of the central angle subtending the same chord.
+* Angles inscribed in the same arc are equal.
+* The sum of the measures of opposite angles of a cyclic quadrilateral is $180^\circ$.
+
+---
+
+### **IV. Cyclic Quadrilaterals**
+
+A **cyclic quadrilateral** is a quadrilateral whose vertices all lie on a single circle.
+
+* **Property:** The sum of the measures of the opposite angles of a cyclic quadrilateral is $180^\circ$:
+
+  $$
+  \alpha + \gamma = 180^\circ, \quad \beta + \delta = 180^\circ
+  $$
+
+* **Theorem (Ptolemy's Theorem):** In a cyclic quadrilateral, the product of the lengths of the diagonals is equal to the sum of the products of the lengths of the two pairs of opposite sides:
+
+  $$
+  AC \cdot BD = AB \cdot CD + AD \cdot BC
+  $$
+
+---
+
+### **V. Tangential Quadrilaterals**
+
+A **tangential quadrilateral** is a quadrilateral for which a circle can be inscribed so that it is tangent to all four sides.
+
+* **Property:** In a tangential quadrilateral, the sums of the lengths of the pairs of opposite sides are equal:
+
+  $$
+  a + c = b + d
+  $$
+
+  where $a, b, c, d$ are the side lengths in order.
+
+---
+
+### **VI. Applications**
+
+The properties of circles, angles, cyclic and tangential quadrilaterals are fundamental in geometry, constructions, and problem solving.
+
+They are widely used in mathematics, engineering, physics, and design.
+
+---
+
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 18** (“Vectors, Vector Operations. Vector Decomposition Theorem. Coordinates of Vectors. Scalar Product”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content, including all formulas, without omitting or summarizing anything. If you require diagrams or layouts from the PDF, please specify the page and I will provide them.
+
+---
+
+## 18. Topic: Vectors, Vector Operations. Vector Decomposition Theorem. Coordinates of Vectors. Scalar Product.
+
+---
+
+### **I. Vectors**
+
+A **vector** is a quantity that has both magnitude (length) and direction.
+
+A vector in the plane is represented by a directed line segment from point $A$ to point $B$, denoted as $\vec{AB}$.
+
+The starting point is called the **origin** or **tail**, and the endpoint is called the **end** or **head** of the vector.
+
+The length of the vector $\vec{AB}$ is the distance between $A$ and $B$.
+
+---
+
+### **II. Vector Operations**
+
+#### **1. Vector Addition**
+
+The sum of two vectors $\vec{a}$ and $\vec{b}$ is the vector $\vec{a} + \vec{b}$, which can be constructed by placing the tail of $\vec{b}$ at the head of $\vec{a}$.
+The vector from the tail of $\vec{a}$ to the head of $\vec{b}$ is the sum.
+
+Vector addition is **commutative**: $\vec{a} + \vec{b} = \vec{b} + \vec{a}$.
+
+Vector addition is **associative**: $(\vec{a} + \vec{b}) + \vec{c} = \vec{a} + (\vec{b} + \vec{c})$.
+
+#### **2. Scalar Multiplication**
+
+If $\lambda$ is a real number (scalar) and $\vec{a}$ is a vector, then $\lambda \vec{a}$ is a vector in the same direction as $\vec{a}$ if $\lambda > 0$, in the opposite direction if $\lambda < 0$, and has magnitude $|\lambda|$ times that of $\vec{a}$.
+
+#### **3. Vector Subtraction**
+
+The difference $\vec{a} - \vec{b}$ is defined as $\vec{a} + (-\vec{b})$, where $-\vec{b}$ is the vector with the same magnitude as $\vec{b}$ but opposite direction.
+
+---
+
+### **III. Vector Decomposition Theorem**
+
+Any vector $\vec{a}$ in the plane can be uniquely written as the sum of two vectors along given, non-parallel directions.
+
+For example, if $\vec{e}_1$ and $\vec{e}_2$ are two non-parallel vectors (basis vectors), then there exist unique real numbers $x$ and $y$ such that:
+
+$$
+\vec{a} = x \vec{e}_1 + y \vec{e}_2
+$$
+
+This is called the **vector decomposition theorem**.
+
+---
+
+### **IV. Coordinates of Vectors**
+
+Let the origin of the coordinate system be $O(0, 0)$.
+
+Let $\vec{a}$ be the vector from $A(x_1, y_1)$ to $B(x_2, y_2)$.
+
+The **components** (coordinates) of the vector $\vec{AB}$ are:
+
+$$
+\vec{AB} = (x_2 - x_1, \; y_2 - y_1)
+$$
+
+The **magnitude** (length) of the vector $\vec{a} = (a_1, a_2)$ is:
+
+$$
+|\vec{a}| = \sqrt{a_1^2 + a_2^2}
+$$
+
+---
+
+### **V. Scalar Product (Dot Product)**
+
+The **scalar product** (dot product) of two vectors $\vec{a} = (a_1, a_2)$ and $\vec{b} = (b_1, b_2)$ is defined as:
+
+$$
+\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2
+$$
+
+Alternatively, if the angle between $\vec{a}$ and $\vec{b}$ is $\varphi$, then:
+
+$$
+\vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot \cos \varphi
+$$
+
+**Properties:**
+
+* The scalar product is **commutative**: $\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$.
+* If $\vec{a} \cdot \vec{b} = 0$, then the vectors are perpendicular.
+* The scalar product of a vector with itself is the square of its length: $\vec{a} \cdot \vec{a} = |\vec{a}|^2$.
+
+---
+
+### **VI. Applications**
+
+Vectors and their operations are widely used in mathematics, physics (e.g., forces, velocities, accelerations), engineering, computer graphics, and many other sciences.
+
+Vector decomposition is essential in solving problems involving movement, force systems, and coordinate geometry.
+
+The scalar product is used to compute angles between vectors, to determine orthogonality (perpendicularity), and to calculate projections.
+
+---
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 19** (“Segments and Lines in the Coordinate Plane. Parallel and Perpendicular Lines. Graphical Solution of First-Degree Inequalities and Systems of Equations”) from your mathematics oral matura document. The translation preserves the original mathematical structure, terminology, and all formulas, with nothing omitted or summarized. If you require diagrams or the original layout from the PDF, please specify the page and I will provide them.
+
+---
+
+## 19. Topic: Segments and Lines in the Coordinate Plane. Parallel and Perpendicular Lines. Graphical Solution of First-Degree Inequalities and Systems of Equations.
+
+---
+
+### **I. Segments and Lines in the Coordinate Plane**
+
+A **segment** is a part of a straight line that is bounded by two endpoints.
+
+If the endpoints of the segment are $A(x_1, y_1)$ and $B(x_2, y_2)$, then the length of the segment $AB$ is:
+
+$$
+|AB| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+$$
+
+The **midpoint** of segment $AB$ has coordinates:
+
+$$
+M \left( \frac{x_1 + x_2}{2},\; \frac{y_1 + y_2}{2} \right)
+$$
+
+A **line** in the plane can be given in several forms:
+
+* **General form:**
+
+  $$
+  ax + by + c = 0
+  $$
+
+  where $a, b, c \in \mathbb{R}$, $a$ and $b$ are not both zero.
+
+* **Slope-intercept form:**
+
+  $$
+  y = mx + b
+  $$
+
+  where $m$ is the slope of the line and $b$ is the $y$-intercept.
+
+* **Point-slope form:**
+
+  $$
+  y - y_1 = m(x - x_1)
+  $$
+
+  where $(x_1, y_1)$ is a point on the line.
+
+The **slope** of the line (if $b \neq 0$) is:
+
+$$
+m = -\frac{a}{b}
+$$
+
+---
+
+### **II. Parallel and Perpendicular Lines**
+
+* Two lines are **parallel** if their slopes are equal ($m_1 = m_2$), or if the ratios $\frac{a_1}{a_2} = \frac{b_1}{b_2}$ (provided both denominators are not zero).
+
+* Two lines are **perpendicular** if the product of their slopes is $-1$ ($m_1 \cdot m_2 = -1$), or if $a_1 a_2 + b_1 b_2 = 0$.
+
+---
+
+### **III. Graphical Solution of First-Degree Inequalities**
+
+A **first-degree inequality** in two variables has the form:
+
+$$
+ax + by + c < 0 \quad \text{or} \quad ax + by + c > 0
+$$
+
+The corresponding equation ($ax + by + c = 0$) represents a line in the plane, which divides the plane into two half-planes.
+
+* The solution set of the inequality is the set of points in the half-plane for which the inequality holds.
+* If the inequality is non-strict ($\leq$ or $\geq$), then the boundary line is included in the solution set.
+
+To determine which side of the line to shade, substitute the coordinates of a test point (e.g., the origin, if it is not on the line) into the inequality.
+
+---
+
+### **IV. Graphical Solution of Systems of Linear Equations and Inequalities**
+
+A **system of linear equations** corresponds to two or more lines in the plane.
+
+* The solution of the system is the set of points where all the equations are satisfied simultaneously, i.e., the intersection points of the corresponding lines.
+
+A **system of linear inequalities** corresponds to the intersection of the half-planes defined by each inequality.
+
+* The solution set is the region of the plane where all inequalities are satisfied at once.
+
+**Graphical solution steps:**
+
+1. Draw the boundary lines for each equation or inequality.
+2. Shade the solution half-planes for inequalities.
+3. The solution set is the intersection of all shaded regions.
+
+---
+
+### **V. Applications**
+
+Segments and lines in the coordinate plane are fundamental in geometry, analytic geometry, engineering, and computer graphics.
+
+The concepts of parallelism and perpendicularity are widely used in constructions, design, and problem solving.
+
+Graphical solutions of equations and inequalities are essential in optimization, linear programming, and economics.
+
+---
+
+Certainly! Here is a **precise, sentence-by-sentence English translation of Topic 20** (“The Circle and the Parabola by Elementary Methods and in the Coordinate Plane. Mutual Positions of Circle and Line, Parabola and Line. Graphical Solution of Quadratic Inequalities”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content exactly, with all formulas and no omission or summarization. If you require diagrams or layouts as in the PDF, please specify the page and I will provide them.
+
+---
+
+## 20. Topic: The Circle and the Parabola by Elementary Methods and in the Coordinate Plane. Mutual Positions of Circle and Line, Parabola and Line. Graphical Solution of Quadratic Inequalities.
+
+---
+
+### **I. The Circle by Elementary Methods and in the Coordinate Plane**
+
+A **circle** is the set of all points in a plane that are at a fixed distance (radius) from a given point (center).
+
+The **standard equation of a circle** with center $O(a, b)$ and radius $r$ in the coordinate plane is:
+
+$$
+(x - a)^2 + (y - b)^2 = r^2
+$$
+
+If the center is at the origin ($O(0, 0)$), the equation is:
+
+$$
+x^2 + y^2 = r^2
+$$
+
+---
+
+### **II. The Parabola by Elementary Methods and in the Coordinate Plane**
+
+A **parabola** is the set of all points in a plane that are equidistant from a fixed point (the focus) and a fixed line (the directrix).
+
+The **standard equation of a parabola** with its vertex at the origin and its axis along the $y$-axis is:
+
+$$
+y = a x^2
+$$
+
+where $a \neq 0$.
+
+* If $a > 0$, the parabola opens upward.
+* If $a < 0$, the parabola opens downward.
+
+A more general equation:
+
+$$
+y = a x^2 + b x + c
+$$
+
+The **vertex** of the parabola is at the point:
+
+$$
+\left( -\frac{b}{2a},\; c - \frac{b^2}{4a} \right)
+$$
+
+---
+
+### **III. Mutual Position of Circle and Line**
+
+The relative position of a line and a circle in the plane depends on the distance ($d$) from the center of the circle to the line.
+
+* **The line and the circle do not intersect** if $d > r$.
+* **The line is tangent to the circle** if $d = r$.
+* **The line intersects the circle in two points** if $d < r$.
+
+To find the points of intersection, substitute the equation of the line into the equation of the circle and solve the resulting quadratic equation.
+
+---
+
+### **IV. Mutual Position of Parabola and Line**
+
+The mutual position of a line and a parabola depends on the number of solutions to the system of their equations.
+
+* The line does not intersect the parabola if the quadratic equation has no real roots.
+* The line is tangent to the parabola if the quadratic equation has one real root (double root).
+* The line intersects the parabola in two points if the quadratic equation has two real roots.
+
+The **discriminant** ($D$) of the quadratic equation determines the number of intersection points:
+
+* If $D > 0$: Two intersection points.
+* If $D = 0$: The line is tangent to the parabola.
+* If $D < 0$: No intersection points.
+
+---
+
+### **V. Graphical Solution of Quadratic Inequalities**
+
+A **quadratic inequality** in one variable has the general form:
+
+$$
+a x^2 + b x + c < 0 \\
+a x^2 + b x + c > 0 \\
+a x^2 + b x + c \leq 0 \\
+a x^2 + b x + c \geq 0
+$$
+
+To solve the inequality graphically:
+
+1. Draw the graph of the quadratic function $y = a x^2 + b x + c$.
+2. Determine the intervals on the $x$-axis where the graph is above (for $> 0$, $\geq 0$) or below (for $< 0$, $\leq 0$) the $x$-axis.
+3. The solution set consists of those $x$-values for which the inequality is satisfied.
+
+The roots of the quadratic equation ($a x^2 + b x + c = 0$) are the boundary points between the intervals.
+
+---
+
+### **VI. Applications**
+
+Circles and parabolas are fundamental curves in mathematics and its applications.
+
+They appear in geometry, physics (projectile motion), engineering (reflectors, satellite dishes), and many other fields.
+
+Graphical solutions of quadratic inequalities are essential in optimization, economics, and for interpreting the feasible region in various problems.
+
+---
+
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 21** (“Distances and Angles of Spatial Elements. Spatial Figures. Surface Area and Volume Calculation”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content, including all formulas, without omitting or summarizing anything. If you require diagrams or original formatting from the PDF, please specify the page and I will provide them.
+
+---
+
+## 21. Topic: Distances and Angles of Spatial Elements. Spatial Figures. Surface Area and Volume Calculation.
+
+---
+
+### **I. Distances and Angles of Spatial Elements**
+
+#### **1. Distance between Two Points**
+
+In space, the distance between points $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$ is:
+
+$$
+|AB| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+$$
+
+---
+
+#### **2. Distance from a Point to a Line**
+
+The distance from point $P$ to line $e$ is the length of the perpendicular segment from $P$ to $e$.
+
+If the line passes through point $A$ and has direction vector $\vec{v}$, and $P$ is the external point, then:
+
+$$
+d = \frac{|\vec{AP} \times \vec{v}|}{|\vec{v}|}
+$$
+
+where $\times$ denotes the vector (cross) product.
+
+---
+
+#### **3. Distance from a Point to a Plane**
+
+The distance from point $P(x_0, y_0, z_0)$ to the plane $ax + by + cz + d = 0$ is:
+
+$$
+d = \frac{|a x_0 + b y_0 + c z_0 + d|}{\sqrt{a^2 + b^2 + c^2}}
+$$
+
+---
+
+#### **4. Angle between Two Lines**
+
+The angle between two lines is the angle between their direction vectors.
+
+If the direction vectors are $\vec{v_1}$ and $\vec{v_2}$, then the cosine of the angle $\varphi$ between them is:
+
+$$
+\cos \varphi = \frac{|\vec{v_1} \cdot \vec{v_2}|}{|\vec{v_1}| \cdot |\vec{v_2}|}
+$$
+
+where $\cdot$ denotes the scalar product.
+
+---
+
+#### **5. Angle between a Line and a Plane**
+
+The angle between a line and a plane is the complement of the angle between the line’s direction vector and the plane’s normal vector.
+
+Let the direction vector of the line be $\vec{v}$, and the normal vector of the plane be $\vec{n}$:
+
+$$
+\sin \alpha = \frac{|\vec{v} \cdot \vec{n}|}{|\vec{v}| \cdot |\vec{n}|}
+$$
+
+where $\alpha$ is the angle between the line and the plane.
+
+---
+
+#### **6. Angle between Two Planes**
+
+The angle between two planes is the angle between their normal vectors.
+
+If the normal vectors are $\vec{n_1}$ and $\vec{n_2}$, then:
+
+$$
+\cos \varphi = \frac{|\vec{n_1} \cdot \vec{n_2}|}{|\vec{n_1}| \cdot |\vec{n_2}|}
+$$
+
+---
+
+### **II. Spatial Figures**
+
+**1. Prism:**
+A polyhedron with two congruent, parallel bases and rectangular lateral faces.
+
+**2. Pyramid:**
+A polyhedron with a polygonal base and triangular lateral faces meeting at a common point (the apex).
+
+**3. Cylinder:**
+A solid with two parallel, congruent circular bases connected by a curved surface.
+
+**4. Cone:**
+A solid with a circular base and a curved surface connecting the base to a single point (the apex).
+
+**5. Sphere:**
+The set of all points in space at a given distance (radius) from a fixed point (the center).
+
+---
+
+### **III. Surface Area and Volume Calculation**
+
+#### **Prism (with base area $T$, height $m$):**
+
+* Surface area:
+
+  $$
+  A = 2T + P \cdot m
+  $$
+
+  where $P$ is the perimeter of the base.
+* Volume:
+
+  $$
+  V = T \cdot m
+  $$
+
+---
+
+#### **Pyramid (with base area $T$, height $m$):**
+
+* Surface area:
+
+  $$
+  A = T + A_{\text{lateral}}
+  $$
+* Volume:
+
+  $$
+  V = \frac{1}{3} T m
+  $$
+
+---
+
+#### **Cylinder (with base radius $r$, height $m$):**
+
+* Lateral surface area:
+
+  $$
+  A_{\text{lateral}} = 2\pi r m
+  $$
+* Total surface area:
+
+  $$
+  A = 2\pi r m + 2\pi r^2
+  $$
+* Volume:
+
+  $$
+  V = \pi r^2 m
+  $$
+
+---
+
+#### **Cone (with base radius $r$, height $m$, slant height $l$):**
+
+* Lateral surface area:
+
+  $$
+  A_{\text{lateral}} = \pi r l
+  $$
+* Total surface area:
+
+  $$
+  A = \pi r l + \pi r^2
+  $$
+* Volume:
+
+  $$
+  V = \frac{1}{3} \pi r^2 m
+  $$
+
+---
+
+#### **Sphere (with radius $r$):**
+
+* Surface area:
+
+  $$
+  A = 4\pi r^2
+  $$
+* Volume:
+
+  $$
+  V = \frac{4}{3} \pi r^3
+  $$
+
+---
+
+### **IV. Applications**
+
+The calculation of distances and angles in space is essential in geometry, physics, engineering, architecture, and computer graphics.
+
+The formulas for the surface area and volume of solids are widely used in practice, for example in material estimation, design, and measurement.
+
+Understanding spatial figures and their properties is fundamental for solving three-dimensional geometric problems.
+
+---
+Certainly! Here is a **precise, sentence-by-sentence English translation of Topic 22** (“Calculation of Area by Elementary Methods and Using Integral Calculus”) from your mathematics oral matura document. The translation strictly follows the original structure, terminology, and mathematical content, including all formulas, with nothing omitted or summarized. If you need diagrams or the original layout from the PDF, please specify the page and I will provide them.
+
+---
+
+## 22. Topic: Calculation of Area by Elementary Methods and Using Integral Calculus.
+
+---
+
+### \*\*I. Calculation of Area by Elementary Methods
+
+The **area** is a measure of the extent of a region on the plane.
+
+The area is always a non-negative number.
+
+#### **Area of Basic Plane Figures**
+
+* **Rectangle:**
+  Area = base × height
+
+  $$
+  A = a \cdot b
+  $$
+
+* **Square:**
+  Area = side squared
+
+  $$
+  A = a^2
+  $$
+
+* **Parallelogram:**
+  Area = base × height
+
+  $$
+  A = a \cdot m_a
+  $$
+
+  where $a$ is the base, $m_a$ is the height corresponding to base $a$.
+
+* **Triangle:**
+  Area = (base × height) / 2
+
+  $$
+  A = \frac{a \cdot m_a}{2}
+  $$
+
+* **Trapezoid:**
+  Area = (sum of bases × height) / 2
+
+  $$
+  A = \frac{(a + c) \cdot m}{2}
+  $$
+
+  where $a, c$ are the bases, $m$ is the height.
+
+* **Circle:**
+  Area = π × radius squared
+
+  $$
+  A = \pi r^2
+  $$
+
+* **Sector of a circle:**
+  Area = (angle/360°) × π × radius squared
+
+  $$
+  A = \frac{\alpha}{360^\circ} \cdot \pi r^2
+  $$
+
+  where $\alpha$ is the central angle in degrees.
+
+---
+
+### **II. Calculation of Area Using Integral Calculus**
+
+For more complicated plane figures, the area can be calculated using definite integrals.
+
+#### **Area Bounded by the Graph of a Function and the $x$-Axis**
+
+Let $f(x)$ be a continuous function on $[a, b]$.
+
+The area between the graph of $f(x)$, the $x$-axis, and the vertical lines $x = a$ and $x = b$ is:
+
+$$
+A = \int_a^b |f(x)|\,dx
+$$
+
+If $f(x) \geq 0$ on $[a, b]$, then:
+
+$$
+A = \int_a^b f(x)\,dx
+$$
+
+#### **Area Between Two Curves**
+
+If $f(x) \geq g(x)$ for all $x$ in $[a, b]$, then the area between the graphs of $f(x)$ and $g(x)$ over $[a, b]$ is:
+
+$$
+A = \int_a^b (f(x) - g(x))\,dx
+$$
+
+#### **Approximation Using Riemann Sums**
+
+The definite integral can be interpreted as the limit of the sum of the areas of thin rectangles under the curve (Riemann sum):
+
+$$
+\int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x
+$$
+
+where $\Delta x = \frac{b - a}{n}$, and $x_i^*$ is a sample point in the $i$-th subinterval.
+
+---
+
+### **III. Applications**
+
+Elementary area formulas are used to calculate the area of basic plane figures.
+
+Integral calculus allows us to find the area of more complex, curved regions and is fundamental in mathematics, physics, engineering, and many applied sciences.
+
+---
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 23** (“Combinations. The Binomial Theorem, Pascal’s Triangle. The Combinatorial Model of Probability Calculation. The Hypergeometric Distribution”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content, including all formulas, with nothing omitted or summarized. If you require diagrams, tables, or original formatting from the PDF, please specify the page and I will provide them.
+
+---
+
+## 23. Topic: Combinations. The Binomial Theorem, Pascal’s Triangle. The Combinatorial Model of Probability Calculation. The Hypergeometric Distribution.
+
+---
+
+### **I. Combinations**
+
+A **combination** is a selection of elements from a set, where the order does not matter.
+
+The number of ways to choose $k$ elements from a set of $n$ elements is given by the binomial coefficient:
+
+$$
+\binom{n}{k} = \frac{n!}{k! \, (n - k)!}
+$$
+
+where $n! = n \cdot (n-1) \cdot \ldots \cdot 2 \cdot 1$, $k \leq n$, $n, k \in \mathbb{N}_0$.
+
+* $\binom{n}{0} = 1$
+* $\binom{n}{n} = 1$
+
+---
+
+### **II. The Binomial Theorem**
+
+The **binomial theorem** gives the expansion of the power of a binomial:
+
+$$
+(a + b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k
+$$
+
+That is,
+
+$$
+(a + b)^n = \binom{n}{0} a^n + \binom{n}{1} a^{n-1} b + \ldots + \binom{n}{n} b^n
+$$
+
+The coefficients $\binom{n}{k}$ are called **binomial coefficients**.
+
+---
+
+### **III. Pascal’s Triangle**
+
+**Pascal’s triangle** is a triangular array of binomial coefficients.
+
+Each number in Pascal’s triangle is the sum of the two numbers directly above it.
+
+$$
+\begin{array}{cccccccccc}
+    &&&&& 1 \\
+    &&&& 1 && 1 \\
+    &&& 1 && 2 && 1 \\
+    && 1 && 3 && 3 && 1 \\
+    & 1 && 4 && 6 && 4 && 1 \\
+    \ldots
+\end{array}
+$$
+
+The $n$-th row contains the coefficients for the expansion of $(a + b)^n$.
+
+---
+
+### **IV. The Combinatorial Model of Probability Calculation**
+
+In the **classical model of probability**, if an experiment has $n$ equally likely outcomes, and event $A$ can occur in $k$ ways, then:
+
+$$
+P(A) = \frac{k}{n}
+$$
+
+Combinatorial enumeration (counting) is used to determine $k$ and $n$.
+
+* For combinations: the number of possible selections is $\binom{n}{k}$.
+
+---
+
+### **V. The Hypergeometric Distribution**
+
+The **hypergeometric distribution** gives the probability of obtaining exactly $k$ successes in $n$ draws, *without replacement*, from a finite population of $N$ elements, of which $M$ are successes.
+
+The probability is:
+
+$$
+P(X = k) = \frac{\binom{M}{k} \binom{N-M}{n-k}}{\binom{N}{n}}
+$$
+
+where:
+
+* $N$: total number of elements,
+* $M$: number of successes in the population,
+* $n$: number of draws,
+* $k$: number of observed successes.
+
+---
+
+### **VI. Applications**
+
+Combinatorial calculations are fundamental in probability, statistics, and many fields of science and engineering.
+
+The binomial theorem is essential in algebra and combinatorics.
+
+The hypergeometric distribution models random selection without replacement, for example in quality control, lottery, and genetics.
+
+---
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 24** (“Permutations, Variations. The Binomial Distribution. The Geometric Model of Probability Calculation”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content, including all formulas, with nothing omitted or summarized. If you require diagrams, tables, or the original layout from the PDF, please specify the page and I will provide them.
+
+---
+
+## 24. Topic: Permutations, Variations. The Binomial Distribution. The Geometric Model of Probability Calculation.
+
+---
+
+### **I. Permutations**
+
+A **permutation** is an arrangement of all the elements of a set in a specific order.
+
+The number of permutations of $n$ distinct elements is:
+
+$$
+P_n = n!
+$$
+
+where $n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1$.
+
+If there are $n$ elements, of which $k_1$ are alike, $k_2$ are alike, ..., $k_m$ are alike (and $k_1 + k_2 + \ldots + k_m = n$), the number of distinct permutations is:
+
+$$
+P = \frac{n!}{k_1! \cdot k_2! \cdot \ldots \cdot k_m!}
+$$
+
+---
+
+### **II. Variations (Arrangements)**
+
+A **variation** is an ordered selection of $k$ elements from a set of $n$ elements.
+
+* **Variations without repetition:**
+
+  $$
+  V_n^k = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot (n-k+1) = \frac{n!}{(n-k)!}
+  $$
+
+* **Variations with repetition:**
+
+  $$
+  V_n^{k,\,r} = n^k
+  $$
+
+  (Here, each element can be chosen more than once.)
+
+---
+
+### **III. The Binomial Distribution**
+
+The **binomial distribution** gives the probability of obtaining exactly $k$ successes in $n$ independent Bernoulli trials, each with probability $p$ of success.
+
+The probability is:
+
+$$
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+$$
+
+where:
+
+* $n$: number of trials,
+* $k$: number of successes ($0 \leq k \leq n$),
+* $p$: probability of success in a single trial,
+* $\binom{n}{k}$: binomial coefficient.
+
+The sum of the probabilities over all possible values of $k$ is 1.
+
+The binomial distribution models the number of successes in repeated, independent experiments with two possible outcomes.
+
+---
+
+### **IV. The Geometric Model of Probability Calculation**
+
+In the **geometric probability model**, the set of possible outcomes is represented as points in a geometric figure (interval, area, volume).
+
+If all points in the figure are equally likely, the probability of event $A$ is:
+
+$$
+P(A) = \frac{\text{measure of the set corresponding to } A}{\text{measure of the whole sample space}}
+$$
+
+Depending on the context, the measure can be length, area, or volume.
+
+---
+
+### **V. Applications**
+
+Permutations and variations are fundamental in combinatorics, probability, cryptography, coding, and scheduling problems.
+
+The binomial distribution is widely used in statistics, quality control, biology, and finance.
+
+The geometric probability model is applied in physics, engineering, and everyday problems involving random selection from continuous sets.
+
+---
+
+Absolutely! Here is a **precise, sentence-by-sentence English translation of Topic 25** (“Proof Methods and Their Presentation in Mathematical Theorems”) from your mathematics oral matura document. The translation follows the original structure, terminology, and mathematical content exactly, including all formulas, with nothing omitted or summarized. If you require diagrams or the original layout from the PDF, please specify the page and I will provide them.
+
+---
+
+## 25. Topic: Proof Methods and Their Presentation in Mathematical Theorems
+
+---
+
+### **I. The Concept of Proof**
+
+A **proof** is a logical process that demonstrates the truth of a mathematical statement, based on previously accepted facts (axioms, definitions, already proven theorems).
+
+The main purpose of a proof is to show, step by step, why a statement is true.
+
+A proof must be clear, logically correct, and convincing.
+
+---
+
+### **II. Direct Proof**
+
+In a **direct proof**, we start from the given assumptions (premises) and, through a sequence of logical steps, arrive at the conclusion.
+
+**Example:**
+Prove: The sum of two even numbers is even.
+
+**Proof:**
+Let the two even numbers be $2k$ and $2l$, where $k, l \in \mathbb{Z}$.
+Their sum: $2k + 2l = 2(k + l)$, which is even, since $k + l$ is an integer.
+
+---
+
+### **III. Proof by Contrapositive**
+
+The **contrapositive** of the statement "If $A$, then $B$" is "If not $B$, then not $A$".
+
+A statement and its contrapositive are logically equivalent.
+
+**Proof by contrapositive** means we prove the contrapositive statement instead of the original.
+
+**Example:**
+Prove: If $n^2$ is even, then $n$ is even.
+
+**Proof:**
+Contrapositive: If $n$ is odd, then $n^2$ is odd.
+If $n = 2k + 1$ ($k \in \mathbb{Z}$), then $n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$, which is odd.
+
+---
+
+### **IV. Proof by Contradiction (Indirect Proof)**
+
+In **proof by contradiction**, we assume that the statement we want to prove is false, and show that this leads to a contradiction (an impossibility).
+
+**Example:**
+Prove: $\sqrt{2}$ is irrational.
+
+**Proof:**
+Suppose the contrary, that $\sqrt{2}$ is rational.
+Then $\sqrt{2} = \frac{p}{q}$ in lowest terms, with $p, q$ integers, $q \neq 0$, and $\gcd(p, q) = 1$.
+Then $2 = \frac{p^2}{q^2} \implies p^2 = 2q^2$.
+So $p^2$ is even, so $p$ is even, so $p = 2k$.
+Then $(2k)^2 = 4k^2 = 2q^2 \implies q^2 = 2k^2$, so $q^2$ is even, so $q$ is even.
+Thus both $p$ and $q$ are even, contradicting $\gcd(p, q) = 1$.
+
+---
+
+### **V. Proof by Mathematical Induction**
+
+**Mathematical induction** is a method used to prove statements about all natural numbers (or about infinitely many cases).
+
+The method has two main steps:
+
+1. **Base Case:** Prove the statement is true for the initial value (usually $n = 1$ or $n = 0$).
+2. **Inductive Step:** Assume the statement is true for $n = k$ (inductive hypothesis), and show it is true for $n = k+1$.
+
+If both steps are valid, the statement is true for all $n$ in the domain.
+
+**Example:**
+Prove that $1 + 2 + \ldots + n = \frac{n(n+1)}{2}$ for all $n \geq 1$.
+
+**Proof:**
+
+* **Base Case ($n = 1$)**: $1 = \frac{1 \cdot 2}{2} = 1$, true.
+* **Inductive Step:**
+  Assume true for $n = k$: $1 + 2 + \ldots + k = \frac{k(k+1)}{2}$.
+  For $n = k+1$:
+  $1 + 2 + \ldots + k + (k+1) = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$, as required.
+
+---
+
+### **VI. Constructive and Non-Constructive Proofs**
+
+A **constructive proof** provides a method or example for constructing an object that meets the required conditions.
+
+A **non-constructive proof** shows the existence of an object without necessarily providing a way to construct it.
+
+---
+
+### **VII. Proofs in Theorems**
+
+In mathematics, theorems are often formulated with conditions and conclusions, and proofs must justify the conclusion from the assumptions.
+
+Proofs use the rules of logic and previously established results.
+
+Proofs can be presented in words, using mathematical symbols and formulas, or with diagrams and figures as needed.
+
+---
+
+### **VIII. Applications**
+
+Proof methods are fundamental to mathematics.
+
+They are necessary in all areas of mathematics for verifying the correctness of statements, and they ensure the reliability and consistency of mathematical results.
+
+---
